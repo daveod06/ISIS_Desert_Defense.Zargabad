@@ -1,0 +1,54 @@
+//respawn = 2;
+//respawnOnStart = 0;
+//respawnDelay = 2;
+setViewDistance = 6000;
+
+class CfgMusic
+{
+sounds[] = {01,02,03,04};
+class 01
+{
+name = "Dam_Music";
+sound[] = {"music\Dam.ogg", db+10, 1.0};
+titles[] = {0,""};
+};
+class 02
+{
+name = "Facility_Music";
+sound[] = {"music\Facility.ogg", db+10, 1.0};
+titles[] = {0,""};
+};
+class 03
+{
+name = "Egypt_Music";
+sound[] = {"music\Egypt.ogg", db+10, 1.0};
+titles[] = {0,""};
+};
+class 04
+{
+name = "Lawrence_of_Arabia_Music";
+sound[] = {"music\Lawrence_of_Arabia.ogg", db+10, 1.0};
+titles[] = {0,""};
+};
+
+};
+
+ 
+//----- For PvP ---------
+//disableChannels[]={0,6};
+joinUnassigned = 1;
+
+corpseLimit = 30;
+corpseRemovalMinTime = 60;
+corpseRemovalMaxTime = 300;
+
+wreckLimit = 15;
+wreckRemovalMinTime = 60;
+wreckRemovalMaxTime = 1200;
+
+class Header
+{
+	gameType =sandbox;
+	minPlayers = 1;
+	maxPlayers = 149;
+};
