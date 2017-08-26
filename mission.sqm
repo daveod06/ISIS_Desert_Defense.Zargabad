@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=1627;
+		nextID=1640;
 	};
 	class MarkerIDProvider
 	{
@@ -20,10 +20,10 @@ class EditorData
 	};
 	class Camera
 	{
-		pos[]={4810.7832,177.7498,6325.2524};
-		dir[]={-0.28951553,-0.78183186,-0.55242532};
-		up[]={-0.36293608,0.6233983,-0.69251031};
-		aside[]={-0.88582653,-3.504334e-006,0.46423516};
+		pos[]={4960.2437,248.0071,6516.1152};
+		dir[]={-0.11962976,-0.67082685,-0.73206872};
+		up[]={-0.10820265,0.74149817,-0.66211379};
+		aside[]={-0.9870109,-1.7216225e-006,0.1612795};
 	};
 };
 binarizationWanted=0;
@@ -500,7 +500,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=293;
+		items=306;
 		class Item0
 		{
 			dataType="Logic";
@@ -703,7 +703,6 @@ class Mission
 					class Attributes
 					{
 						init="call{this addweapon ""ItemMap"";This addweapon ""ItemCompass"";This addweapon ""ItemRadio"";This addweapon ""ItemGPS"";}";
-						isPlayer=1;
 						isPlayable=1;
 						aiRadarUsage=-1054867456;
 					};
@@ -16762,7 +16761,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4848.6484,211.39763,7008.2256};
+						position[]={5004.1494,29.714796,6318.0225};
 					};
 					side="West";
 					flags=7;
@@ -16770,6 +16769,7 @@ class Mission
 					{
 						health=0.89999998;
 						init="call{this addweapon ""ItemMap"";This addweapon ""ItemCompass"";This addweapon ""ItemRadio"";This addweapon ""ItemGPS"";}";
+						isPlayer=1;
 					};
 					id=1367;
 					type="B_Survivor_F";
@@ -16821,7 +16821,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4846.8174,211.19965,7006.3584};
+						position[]={4993.4326,29.751434,6350.1621};
 					};
 					side="West";
 					flags=5;
@@ -16880,7 +16880,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4845.5703,210.90225,7007.2993};
+						position[]={4992.1855,29.751434,6351.103};
 					};
 					side="West";
 					flags=5;
@@ -16939,8 +16939,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4845.7705,210.8004,7008.5903};
-						angles[]={0.14644298,0,0.17809334};
+						position[]={4992.3857,29.75412,6352.394};
+						angles[]={6.278194,0,0.0024897563};
 					};
 					side="West";
 					flags=4;
@@ -16999,8 +16999,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4846.8286,210.83145,7010.2041};
-						angles[]={0.06739822,0,0.25436646};
+						position[]={4993.4438,29.764835,6354.0078};
+						angles[]={6.278194,0,0.0024897563};
 					};
 					side="West";
 					flags=4;
@@ -18054,7 +18054,7 @@ class Mission
 			};
 			id=1449;
 			type="CUP_O_Mi8_SLA_1";
-			atlOffset=-0.067998886;
+			atlOffset=-0.068000793;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -19102,7 +19102,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4969.688,29.911486,6289.7847};
+						position[]={4969.688,29.911892,6289.7847};
 					};
 					side="East";
 					flags=7;
@@ -19110,9 +19110,11 @@ class Mission
 					{
 						skill=0.55000001;
 						rank="LIEUTENANT";
+						name="isis_base_commander";
 					};
 					id=1469;
 					type="isc_is_team_leader_o";
+					atlOffset=0.00040626526;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -19134,7 +19136,26 @@ class Mission
 								};
 							};
 						};
-						nAttributes=1;
+						class Attribute1
+						{
+							property="pitch";
+							expression="_this setpitch _value;";
+							class Value
+							{
+								class data
+								{
+									class type
+									{
+										type[]=
+										{
+											"SCALAR"
+										};
+									};
+									value=0.95999998;
+								};
+							};
+						};
+						nAttributes=2;
 					};
 				};
 				class Item1
@@ -19306,6 +19327,7 @@ class Mission
 				dynamicSimulation=1;
 			};
 			id=1468;
+			atlOffset=0.00040626526;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22878,8 +22900,8 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4716.5347,29.891136,6244.6152};
-				angles[]={0.0024897563,0,0.0049914722};
+				position[]={4954.2432,29.828405,6268.9541};
+				angles[]={0.0049916417,0,6.2756805};
 			};
 			name="task_1";
 			id=1623;
@@ -22920,7 +22942,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="move";
+							value="destroy";
 						};
 					};
 				};
@@ -22977,7 +22999,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Get through the town";
+							value="Destroy ISIS tanks.";
 						};
 					};
 				};
@@ -22996,7 +23018,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Pass through the town during Mulligan's mortar barrage to breach the enemy lines.";
+							value="Destroy ISIS tanks.";
 						};
 					};
 				};
@@ -23103,12 +23125,11 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4734.0391,29.902182,6222.9521};
-				angles[]={6.2756844,0,6.2806959};
+				position[]={4964.8955,29.505602,6253.7817};
+				angles[]={6.2756844,0,0.0024897563};
 			};
 			id=1624;
 			type="ModuleTaskSetDestination_F";
-			atlOffset=0.0051383972;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23155,27 +23176,26 @@ class Mission
 		class Item291
 		{
 			dataType="Trigger";
-			position[]={4741.4839,29.93051,6238.7349};
+			position[]={4956.9551,29.699757,6256.7432};
 			class Attributes
 			{
 				text="Task 1 Complete - Destroy ISIS Tanks";
-				condition="call{this}";
+				condition="call{!alive isis_base_tank_1 && !alive isis_base_tank_2 && !alive isis_base_tank_3 && !alive isis_base_tank_4;}";
 				onActivation="call{task_1_done = true;}";
-				sizeA=100;
-				sizeB=100;
+				sizeA=0;
+				sizeB=0;
 				timeout[]={2,2,2};
 			};
 			id=1625;
 			type="EmptyDetectorAreaR50";
-			atlOffset=-1.9073486e-006;
 		};
 		class Item292
 		{
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4709.585,29.882341,6228.1064};
-				angles[]={6.2806959,0,6.278194};
+				position[]={4950.4355,29.832521,6262.4155};
+				angles[]={6.278194,0,0.012496647};
 			};
 			id=1626;
 			type="ModuleTaskSetState_F";
@@ -23222,16 +23242,1079 @@ class Mission
 				nAttributes=2;
 			};
 		};
+		class Item293
+		{
+			dataType="Trigger";
+			position[]={4960.4131,29.798925,6288.8071};
+			class Attributes
+			{
+				text="Task 2 Complete - Kill ISIS Base Commander";
+				condition="call{!alive isis_base_commander;}";
+				onActivation="call{task_2_done = true;}";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={2,2,2};
+			};
+			id=1627;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item294
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4960.1841,29.818619,6280.0972};
+				angles[]={0,0,6.2756805};
+			};
+			name="task_2";
+			id=1628;
+			type="ModuleTaskCreate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskCreate_F_Destination";
+					expression="_this setVariable ['Destination',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskCreate_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="kill";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleTaskCreate_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleTaskCreate_F_Marker";
+					expression="_this setVariable ['Marker',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="task_marker_2";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleTaskCreate_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Kill ISIS commander.";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleTaskCreate_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Kill ISIS commander.";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleTaskCreate_F_ID";
+					expression="_this setVariable ['ID',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="task_id_2";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleTaskCreate_F_AlwaysVisible";
+					expression="_this setVariable ['AlwaysVisible',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleTaskCreate_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleTaskCreate_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ASSIGNED";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleTaskCreate_F_IDParent";
+					expression="_this setVariable ['IDParent',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=11;
+			};
+		};
+		class Item295
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4956.9126,29.786839,6281.8169};
+				angles[]={0.022495884,0,6.2806959};
+			};
+			id=1629;
+			type="ModuleTaskSetState_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="SUCCEEDED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item296
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4963.0879,29.809288,6286.314};
+				angles[]={6.278194,0,0.0024897563};
+			};
+			id=1630;
+			type="ModuleTaskSetDestination_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetDestination_F_Destination";
+					expression="_this setVariable ['Destination',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="1";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetDestination_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item297
+		{
+			dataType="Trigger";
+			position[]={4883.7769,30.158289,6273.8462};
+			class Attributes
+			{
+				text="Task 3 Complete - Destroy ISIS Helicopter";
+				condition="call{!alive isis_base_helicopter;}";
+				onActivation="call{task_3_done = true;}";
+				sizeA=0;
+				sizeB=0;
+				timeout[]={2,2,2};
+			};
+			id=1631;
+			type="EmptyDetectorAreaR50";
+			atlOffset=0.0049991608;
+		};
+		class Item298
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4881.0659,30.138927,6286.0562};
+				angles[]={6.2606878,0,0.0024958209};
+			};
+			name="task_3";
+			id=1632;
+			type="ModuleTaskCreate_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskCreate_F_Destination";
+					expression="_this setVariable ['Destination',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskCreate_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="destroy";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleTaskCreate_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleTaskCreate_F_Marker";
+					expression="_this setVariable ['Marker',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="task_marker_3";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleTaskCreate_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Destroy ISIS helicopter.";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleTaskCreate_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Destroy ISIS helicopter.";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleTaskCreate_F_ID";
+					expression="_this setVariable ['ID',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="task_id_3";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleTaskCreate_F_AlwaysVisible";
+					expression="_this setVariable ['AlwaysVisible',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleTaskCreate_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleTaskCreate_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ASSIGNED";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleTaskCreate_F_IDParent";
+					expression="_this setVariable ['IDParent',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=11;
+			};
+		};
+		class Item299
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4877.2588,30.129045,6279.5176};
+				angles[]={0.01749678,0,6.2806959};
+			};
+			id=1633;
+			type="ModuleTaskSetState_F";
+			atlOffset=0.023750305;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="SUCCEEDED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item300
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4891.9878,30.106281,6281.2622};
+				angles[]={6.278194,0,0.0024897563};
+			};
+			id=1634;
+			type="ModuleTaskSetDestination_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetDestination_F_Destination";
+					expression="_this setVariable ['Destination',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetDestination_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item301
+		{
+			dataType="Trigger";
+			position[]={4896.3164,29.895702,6145.9648};
+			class Attributes
+			{
+				text="Task 4 Complete - Kill All ISIS Member at ISIS Base";
+				condition="call{this;}";
+				onActivation="call{task_4_done = true;}";
+				sizeA=300;
+				sizeB=300;
+				timeout[]={2,2,2};
+				activationType="NOT PRESENT";
+				activationBy="EAST";
+			};
+			id=1635;
+			type="EmptyDetectorAreaR50";
+		};
+		class Item302
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4849.9521,29.879869,6199.332};
+				angles[]={6.2756805,0,0.0024958209};
+			};
+			name="task_4";
+			id=1636;
+			type="ModuleTaskCreate_F";
+			atlOffset=-1.9073486e-006;
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskCreate_F_Destination";
+					expression="_this setVariable ['Destination',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskCreate_F_Type";
+					expression="_this setVariable ['Type',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="attack";
+						};
+					};
+				};
+				class Attribute2
+				{
+					property="ModuleTaskCreate_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute3
+				{
+					property="ModuleTaskCreate_F_Marker";
+					expression="_this setVariable ['Marker',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="task_marker_4";
+						};
+					};
+				};
+				class Attribute4
+				{
+					property="ModuleTaskCreate_F_Title";
+					expression="_this setVariable ['Title',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Kill all ISIS members at ISIS base.";
+						};
+					};
+				};
+				class Attribute5
+				{
+					property="ModuleTaskCreate_F_Description";
+					expression="_this setVariable ['Description',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="Kill all ISIS members at ISIS base.";
+						};
+					};
+				};
+				class Attribute6
+				{
+					property="ModuleTaskCreate_F_ID";
+					expression="_this setVariable ['ID',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="task_id_4";
+						};
+					};
+				};
+				class Attribute7
+				{
+					property="ModuleTaskCreate_F_AlwaysVisible";
+					expression="_this setVariable ['AlwaysVisible',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=0;
+						};
+					};
+				};
+				class Attribute8
+				{
+					property="ModuleTaskCreate_F_Owner";
+					expression="_this setVariable ['Owner',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute9
+				{
+					property="ModuleTaskCreate_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="ASSIGNED";
+						};
+					};
+				};
+				class Attribute10
+				{
+					property="ModuleTaskCreate_F_IDParent";
+					expression="_this setVariable ['IDParent',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="";
+						};
+					};
+				};
+				nAttributes=11;
+			};
+		};
+		class Item303
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4840.2598,29.853098,6179.3931};
+				angles[]={6.2606878,0,6.2706885};
+			};
+			id=1637;
+			type="ModuleTaskSetState_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetState_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetState_F_State";
+					expression="_this setVariable ['State',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="SUCCEEDED";
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item304
+		{
+			dataType="Logic";
+			class PositionInfo
+			{
+				position[]={4915.8047,29.765366,6177.9512};
+				angles[]={6.2806959,0,6.2806959};
+			};
+			id=1638;
+			type="ModuleTaskSetDestination_F";
+			class CustomAttributes
+			{
+				class Attribute0
+				{
+					property="ModuleTaskSetDestination_F_Destination";
+					expression="_this setVariable ['Destination',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"STRING"
+								};
+							};
+							value="0";
+						};
+					};
+				};
+				class Attribute1
+				{
+					property="ModuleTaskSetDestination_F_ShowNotification";
+					expression="_this setVariable ['ShowNotification',_value,true];";
+					class Value
+					{
+						class data
+						{
+							class type
+							{
+								type[]=
+								{
+									"SCALAR"
+								};
+							};
+							value=1;
+						};
+					};
+				};
+				nAttributes=2;
+			};
+		};
+		class Item305
+		{
+			dataType="Trigger";
+			position[]={4894.4229,29.696003,6164.103};
+			class Attributes
+			{
+				text="Detect Attack on ISIS Base";
+				condition="call{this}";
+				onActivation="call{isis_base_attack_underway = true;}";
+				sizeA=250;
+				sizeB=250;
+				activationType="EAST D";
+				activationBy="WEST";
+			};
+			id=1639;
+			type="EmptyDetectorAreaR250";
+		};
 	};
 	class Connections
 	{
 		class LinkIDProvider
 		{
-			nextID=6;
+			nextID=20;
 		};
 		class Links
 		{
-			items=6;
+			items=20;
 			class Item0
 			{
 				linkID=0;
@@ -23287,6 +24370,146 @@ class Mission
 				linkID=5;
 				item0=1625;
 				item1=1626;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item6
+			{
+				linkID=6;
+				item0=1623;
+				item1=1367;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item7
+			{
+				linkID=7;
+				item0=1628;
+				item1=1629;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item8
+			{
+				linkID=8;
+				item0=1628;
+				item1=1630;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item9
+			{
+				linkID=9;
+				item0=1627;
+				item1=1629;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item10
+			{
+				linkID=10;
+				item0=1628;
+				item1=1367;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item11
+			{
+				linkID=11;
+				item0=1630;
+				item1=1469;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item12
+			{
+				linkID=12;
+				item0=1632;
+				item1=1633;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item13
+			{
+				linkID=13;
+				item0=1632;
+				item1=1634;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item14
+			{
+				linkID=14;
+				item0=1631;
+				item1=1633;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item15
+			{
+				linkID=15;
+				item0=1632;
+				item1=1367;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item16
+			{
+				linkID=16;
+				item0=1636;
+				item1=1637;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item17
+			{
+				linkID=17;
+				item0=1636;
+				item1=1638;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item18
+			{
+				linkID=18;
+				item0=1635;
+				item1=1637;
+				class CustomData
+				{
+					type="Sync";
+				};
+			};
+			class Item19
+			{
+				linkID=19;
+				item0=1636;
+				item1=1367;
 				class CustomData
 				{
 					type="Sync";
