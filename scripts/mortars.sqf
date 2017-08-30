@@ -1,3 +1,4 @@
+// _script = [50, isis_base_mortar_1, [us_leader], 150, 20] execVM "scripts\mortars.sqf";
 _numRounds = _this select 0;
 _mortarName = _this select 1;
 _targetUnit = _this select 2; // array of possible target units
