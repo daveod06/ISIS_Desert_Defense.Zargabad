@@ -17,21 +17,22 @@ while {alive _bomber && _runCode == 1} do
 	{
 		_pos = position (_nearUnits select 0);
 		_bomber doMove _pos;
-		waitUntil {(_bomber distance _pos < 15) or (!alive _bomber) or (!alive(nearUnits select 0))};
+		waitUntil {(_bomber distance _pos < 15) or (!alive _bomber) or (!alive(_nearUnits select 0))};
 		if(_bomber distance (_nearUnits select 0) < 15)
 		exitWith
 		{
 		_runCode = 0;
 		_explosive = _explosiveClass createVehicle (position _bomber);
-        [_bomber,_explosive] spawn {_bomber = _this select 0; _explosive = _this select 1; sleep 2; _bomber say3D "shout"; _explosive setDamage 1; _bomber addRating -10000000;};
+        [_bomber,_explosive] spawn {_bomber = _this select 0; _explosive = _this select 1; sleep 0.5; _bomber say3D "shout"; _explosive setDamage 1; _bomber addRating -10000000;};
 		[_explosive,_bomber] spawn {_explosive = _this select 0; _bomber = _this select 1; waitUntil {!alive _bomber}; deleteVehicle _explosive;};
+		_bomb_object = "SatchelCharge_Remote_Mag"
 			if(round(random(1)) == 0) then
 			{
-			_explosive attachTo [_bomber,[-0.02,-0.07,0.042],"rightHand"];
+			_bomb_object attachTo [_bomber,[-0.02,-0.07,0.042],"rightHand"];
 			}
 			else
 			{
-			_explosive attachTo [_bomber,[-0.02,-0.07,0.042],"leftHand"];
+			_bomb_object attachTo [_bomber,[-0.02,-0.07,0.042],"leftHand"];
 			};
 		};
 	};
