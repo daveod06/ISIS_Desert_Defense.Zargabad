@@ -1,11 +1,5 @@
-//respawn = 2;
-//respawnOnStart = 0;
-//respawnDelay = 2;
-setViewDistance = 6000;
-
 class CfgMusic
 {
-
 	sounds[] = {01,02,03,04,05,06,07};
 	class 01
 	{
@@ -49,30 +43,4 @@ class CfgMusic
 		sound[] = {"music\007_Surface_2.ogg", db+10, 1.0};
 		titles[] = {0,""};
 	};
-};
-
-
-class CfgSounds
-{
-	#include "sfx\Sounds.hpp"
-};
-
- 
-//----- For PvP ---------
-//disableChannels[]={0,6};
-joinUnassigned = 1;
-
-corpseLimit = 30;
-corpseRemovalMinTime = 60;
-corpseRemovalMaxTime = 300;
-
-wreckLimit = 15;
-wreckRemovalMinTime = 60;
-wreckRemovalMaxTime = 1200;
-
-class Header
-{
-	gameType =sandbox;
-	minPlayers = 1;
-	maxPlayers = 149;
 };
