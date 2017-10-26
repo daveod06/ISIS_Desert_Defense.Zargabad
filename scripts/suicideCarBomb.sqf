@@ -8,6 +8,8 @@ _size = _this select 4;
 _wait = _this select 5;
 _distance = _this select 6;
 _enemyside = _this select 7;
+_driver_is_alive_lp = true;
+
 
 if(_enemyside == "WEST") then
 {
@@ -15,12 +17,19 @@ if(_enemyside == "WEST") then
 	{
 		if(alive _car) then
 		{
+			_driver_is_alive = alive (driver _car);
 			sleep 0.75;
-			if((driver _car isKindOf "Man") && (side driver _car != west)) then
+			if((driver _car isKindOf "Man") && (side driver _car != west) && (_driver_is_alive)) then
 			{
 				_types = _car nearObjects ["All", _distance];
 				{if(side _x == west) then {_wait = 0}} foreach _types;
 			};
+			if ((!_driver_is_alive) && (_driver_is_alive_lp)) then
+			{
+				_possibility = 10;
+				_wait = 0;
+			};
+			_driver_is_alive_lp = _driver_is_alive;
 		}
 		else
 		{
@@ -36,12 +45,19 @@ if(_enemyside == "EAST") then
 	{
 		if(alive _car) then
 		{
+			_driver_is_alive = alive (driver _car);
 			sleep 0.75;
-			if((driver _car isKindOf "Man") && (side driver _car != east)) then
+			if((driver _car isKindOf "Man") && (side driver _car != east) && (_driver_is_alive)) then
 			{
 				_types = _car nearObjects ["All", _distance];
 				{if(side _x == east) then {_wait = 0}} foreach _types;
 			};
+			if ((!_driver_is_alive) && (_driver_is_alive_lp)) then
+			{
+				_possibility = 10;
+				_wait = 0;
+			};
+			_driver_is_alive_lp = _driver_is_alive;
 		}
 		else 
 		{

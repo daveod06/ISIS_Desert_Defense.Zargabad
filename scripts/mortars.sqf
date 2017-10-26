@@ -8,7 +8,7 @@ _mortar = _mortarName;
 
 for [{_i=0}, {_i<_numRounds}, {_i=_i+1}] do {  
 
-	//if (alive _mortar) {
+	if (alive _mortar) {
 		_uni = _targetUnit call BIS_fnc_selectRandom;
 		//_uni = _targetUnit;
 		_mortar = _mortarName; 
@@ -26,7 +26,7 @@ for [{_i=0}, {_i<_numRounds}, {_i=_i+1}] do {
 						_ammo,
 						1];
 					
-	//}			
+	}			
 
 	sleep _delay;
 
