@@ -4,12 +4,13 @@ _bomber = _this select 0;
 _targetSide = _this select 1;
 _explosiveClass = _this select 2;
 _radius = _this select 3;
+_deadManSwtich = this select 4;
 _runCode = 1;
 
 //while {alive _bomber && _runCode == 1} do
 while {_runCode == 1} do
 {
-	if (!(isNull _bomber) && !(alive _bomber)) then
+	if (!(isNull _bomber) && !(alive _bomber) && _deadManSwtich) then
 	{
 		_explosive = _explosiveClass createVehicle (position _bomber);
 		[_explosive] spawn {
@@ -22,7 +23,7 @@ while {_runCode == 1} do
 		};
 		_runCode = 0;
 	}
-	else
+	elseif (alive _bomber)
 	{
 		_nearUnits = nearestObjects [_bomber,["CAManBase"],70];
 		_nearUnits = _nearUnits - [_bomber];
