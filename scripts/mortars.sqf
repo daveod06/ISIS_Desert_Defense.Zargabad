@@ -26,12 +26,34 @@ aliveCheckFnc = {
 	_mortarOk;
 };
 
+setAiFireFnc = {
+	private _mortarName = _this select 0;
+	private _mode = _this select 2;
+	if 
+	_gunnerName = gunner _mortarName;
+	if (!(isNull _gunnerName) && (alive _gunnerName)) then
+	{
+		if (_mode) then
+		{
+			_gunnerName enableAI "TARGET";
+			_gunnerName enableAI "AUTOTARGET";
+			_gunnerName enableAI "WEAPONAIM";
+		}
+		else
+		{
+			_gunnerName disableAI "TARGET";
+			_gunnerName disableAI "AUTOTARGET";
+			_gunnerName disableAI "WEAPONAIM";
+		};
+	}
+};
+
 
 
 for [{_i=0}, {_i<_numRounds}, {_i=_i+1}] do 
 {  
-
-	_mortarOk = [_mortarName] call alive_check_fnc;
+	
+	_mortarOk = [_mortarName] call aliveCheckFnc;
 	if (_mortarOk) then
 	{
 		_uni = _targetUnit call BIS_fnc_selectRandom;
