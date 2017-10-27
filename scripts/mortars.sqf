@@ -9,7 +9,6 @@ _delay = _this select 4;
 aliveCheckFnc = {
 	private _mortarName = _this select 0;
 	private _mortarOk = false;
-	
 	if !(isNull _mortarName) then
 	{
     		if (alive _mortarName) then
@@ -28,9 +27,16 @@ aliveCheckFnc = {
 
 setAiFireFnc = {
 	private _mortarName = _this select 0;
-	private _mode = _this select 2;
-	if 
-	_gunnerName = gunner _mortarName;
+	private _mode = _this select 1;
+	if (!(isNull _mortarName)) then
+	{
+		_gunnerName = gunner _mortarName;
+	}
+	else
+	{
+		_gunnerName = objNull;
+	};
+	
 	if (!(isNull _gunnerName) && (alive _gunnerName)) then
 	{
 		if (_mode) then
@@ -47,8 +53,6 @@ setAiFireFnc = {
 		};
 	}
 };
-
-
 
 for [{_i=0}, {_i<_numRounds}, {_i=_i+1}] do 
 {  
