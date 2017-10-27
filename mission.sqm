@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1040;
+		nextID=1056;
 	};
 	class Camera
 	{
-		pos[]={4602.5142,87.965355,4217.2358};
-		dir[]={-0.22402427,-0.73398656,-0.6413489};
-		up[]={-0.24204855,0.67905891,-0.69294566};
-		aside[]={-0.94416404,-2.9618386e-006,0.32979408};
+		pos[]={4125.9312,181.54965,4979.0898};
+		dir[]={0.24491113,-0.49873412,-0.83158201};
+		up[]={0.14092502,0.86662519,-0.47851264};
+		aside[]={-0.95935887,-2.2301101e-006,-0.28254312};
 	};
 };
 binarizationWanted=0;
@@ -488,8 +488,8 @@ class Mission
 		forecastLightnings=0.1;
 		year=2009;
 		day=27;
-		hour=19;
-		minute=-21;
+		hour=23;
+		minute=20;
 		startFogBase=-858.04749;
 		startFogDecay=0.0083472086;
 		forecastFogDecay=0.1;
@@ -14214,7 +14214,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4744.458,47.31274,5638.1509};
+						position[]={4065.4629,21.238548,5128.4038};
 						angles[]={0,3.8582945,0};
 					};
 					side="West";
@@ -14295,7 +14295,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4749.8804,47.122189,5638.7397};
+						position[]={4070.8857,21.218496,5128.9922};
 						angles[]={0,3.0460184,0};
 					};
 					side="West";
@@ -14307,7 +14307,6 @@ class Mission
 					};
 					id=1368;
 					type="B_Survivor_F";
-					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14356,7 +14355,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4754.1392,46.975624,5640.3999};
+						position[]={4075.1445,21.279341,5130.6523};
 						angles[]={0,3.0460184,0};
 					};
 					side="West";
@@ -14368,6 +14367,7 @@ class Mission
 					};
 					id=1369;
 					type="B_Survivor_F";
+					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14416,8 +14416,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4752.4414,47.001232,5640.478};
-						angles[]={0.052452512,3.0460184,6.2656851};
+						position[]={4073.4468,21.29154,5130.7305};
+						angles[]={6.2357211,3.0460184,6.278194};
 					};
 					side="West";
 					flags=4;
@@ -14428,6 +14428,7 @@ class Mission
 					};
 					id=1370;
 					type="B_Survivor_F";
+					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -14476,8 +14477,8 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={4751.0381,47.059734,5639.7417};
-						angles[]={0.044969428,3.0460184,6.268187};
+						position[]={4072.0435,21.268608,5129.9941};
+						angles[]={6.2382174,3.0460184,6.2756925};
 					};
 					side="West";
 					flags=4;
@@ -14488,7 +14489,6 @@ class Mission
 					};
 					id=1371;
 					type="B_Survivor_F";
-					atlOffset=3.8146973e-006;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -17871,7 +17871,7 @@ class Mission
 		class Item179
 		{
 			dataType="Trigger";
-			position[]={4816.3291,37.554401,4572.8789};
+			position[]={4817.375,37.010231,4567.854};
 			class Attributes
 			{
 				text="Task 6 Complete - Kill ISIS Warlord";
@@ -17883,7 +17883,6 @@ class Mission
 			};
 			id=1733;
 			type="EmptyDetectorAreaR50";
-			atlOffset=0.10900116;
 		};
 		class Item180
 		{
@@ -20583,8 +20582,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4747.313,49.302708,5641.2119};
-				angles[]={0.057436496,3.1000886,6.2756844};
+				position[]={4068.3186,23.580383,5131.4644};
+				angles[]={6.2556963,3.1000886,6.2731848};
 			};
 			side="Empty";
 			flags=4;
@@ -20595,7 +20594,7 @@ class Mission
 			};
 			id=2032;
 			type="CUP_B_LR_Special_M2_GB_D";
-			atlOffset=-0.0019035339;
+			atlOffset=-0.0079994202;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -20741,10 +20740,10 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4665.7173,63.986877,882.34229};
-				angles[]={0.0049914722,0,0.0049914722};
+				position[]={4665.7168,63.986874,882.34198};
+				angles[]={0.0049916417,0,0.0049916417};
 			};
-			name="task_8";
+			name="task_10";
 			id=2044;
 			type="ModuleTaskCreate_F";
 			class CustomAttributes
@@ -20821,7 +20820,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="task_marker_8";
+							value="task_marker_10";
 						};
 					};
 				};
@@ -20878,7 +20877,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="task_id_8";
+							value="task_id_10";
 						};
 					};
 				};
@@ -22347,7 +22346,7 @@ class Mission
 		class Item245
 		{
 			dataType="Trigger";
-			position[]={4822.0269,47.842033,5580.3218};
+			position[]={4143.0322,21.012112,5070.5742};
 			angle=4.5309782;
 			class Attributes
 			{
@@ -22541,7 +22540,7 @@ class Mission
 		{
 			dataType="Trigger";
 			position[]={4687.439,19.279322,4382.9492};
-			angle=3.602499;
+			angle=3.6024985;
 			class Attributes
 			{
 				text="Send Suicide Trucks";
@@ -22886,8 +22885,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4656.8452,19.092833,4188.0088};
-				angles[]={0,0.027820548,6.2631865};
+				position[]={4707.313,18.824314,4188.7739};
+				angles[]={0.01749678,0.027820548,0};
 			};
 			side="Empty";
 			flags=4;
@@ -22897,7 +22896,6 @@ class Mission
 			};
 			id=2341;
 			type="rhs_weapons_crate_ak";
-			atlOffset=0.0017127991;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -22927,8 +22925,8 @@ class Mission
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={4660.478,18.874224,4191.1484};
-				angles[]={0.0025135824,0,6.2581916};
+				position[]={4710.9458,18.655565,4191.9136};
+				angles[]={6.278194,0,0.0075011365};
 			};
 			side="Empty";
 			flags=4;
@@ -22938,7 +22936,7 @@ class Mission
 			};
 			id=2342;
 			type="rhsusf_ammo_crate";
-			atlOffset=-0.00010299683;
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -23596,12 +23594,14 @@ class Mission
 					};
 					id=2384;
 					type="isc_is_irregular_o";
+					atlOffset=0.17134857;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2383;
+			atlOffset=0.17134857;
 		};
 		class Item288
 		{
@@ -23625,12 +23625,14 @@ class Mission
 					};
 					id=2386;
 					type="isc_is_irregular_o";
+					atlOffset=0.16975403;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2385;
+			atlOffset=0.16975403;
 		};
 		class Item289
 		{
@@ -23684,12 +23686,14 @@ class Mission
 					};
 					id=2391;
 					type="C_CUPTAKCIVS_Civ_10_01";
+					atlOffset=0.16551781;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2390;
+			atlOffset=0.16551781;
 		};
 		class Item291
 		{
@@ -23713,12 +23717,14 @@ class Mission
 					};
 					id=2393;
 					type="C_CUPTAKCIVS_Civ_14_01";
+					atlOffset=0.16583252;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2392;
+			atlOffset=0.16583252;
 		};
 		class Item292
 		{
@@ -23741,14 +23747,14 @@ class Mission
 					};
 					id=2395;
 					type="C_CUPTAKCIVS_Civ_5_01";
-					atlOffset=1.9073486e-006;
+					atlOffset=0.16427803;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2394;
-			atlOffset=1.9073486e-006;
+			atlOffset=0.16427803;
 		};
 		class Item293
 		{
@@ -23772,12 +23778,14 @@ class Mission
 					};
 					id=2397;
 					type="C_CUPTAKCIVS_Civ_6_01";
+					atlOffset=0.16896629;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2396;
+			atlOffset=0.16896629;
 		};
 		class Item294
 		{
@@ -23801,12 +23809,14 @@ class Mission
 					};
 					id=2399;
 					type="C_CUPTAKCIVS_Civ_7_01";
+					atlOffset=0.16751099;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2398;
+			atlOffset=0.16751099;
 		};
 		class Item295
 		{
@@ -23830,12 +23840,14 @@ class Mission
 					};
 					id=2401;
 					type="C_CUPTAKCIVS_Civ_13_01";
+					atlOffset=0.16744232;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2400;
+			atlOffset=0.16744232;
 		};
 		class Item296
 		{
@@ -23859,12 +23871,14 @@ class Mission
 					};
 					id=2403;
 					type="C_CUPTAKCIVS_Civ_2_01";
+					atlOffset=0.16571236;
 				};
 			};
 			class Attributes
 			{
 			};
 			id=2402;
+			atlOffset=0.16571236;
 		};
 		class Item297
 		{
@@ -24537,12 +24551,13 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4542.1758,17.918562,4135.3755};
-				angles[]={0.0049914722,0,0.0024897563};
+				position[]={4542.1758,17.918562,4135.375};
+				angles[]={0.0049916417,0,0.0024958209};
 			};
-			name="task_9";
+			name="task_8";
 			id=2449;
 			type="ModuleTaskCreate_F";
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24579,7 +24594,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="kill";
+							value="rifle";
 						};
 					};
 				};
@@ -24617,7 +24632,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="task_marker_7";
+							value="task_marker_8";
 						};
 					};
 				};
@@ -24636,7 +24651,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="Assasinate Imam and get intel";
+							value="Raid  ISIS Weapons  Cache";
 						};
 					};
 				};
@@ -24674,7 +24689,7 @@ class Mission
 									"STRING"
 								};
 							};
-							value="task_id_7";
+							value="task_id_8";
 						};
 					};
 				};
@@ -24762,11 +24777,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4539.6362,17.987989,4121.2378};
-				angles[]={0.0075011365,0,0.0075011365};
+				position[]={4539.6362,17.987991,4121.2378};
+				angles[]={0.0075049158,0,0.0075049158};
 			};
 			id=2450;
 			type="ModuleTaskSetState_F";
+			atlOffset=1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -24816,9 +24832,9 @@ class Mission
 			position[]={4528.6689,17.905848,4123.75};
 			class Attributes
 			{
-				text="Task 9 Complete -  Loot Weapons from ISIS base";
+				text="Task 8 Complete -  Loot Weapons from ISIS base";
 				condition="call{blufor_near_weapons;}";
-				onActivation="call{task_9_done = true;}";
+				onActivation="call{task_8_done = true;}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -24832,8 +24848,8 @@ class Mission
 			position[]={4529.166,17.844011,4137.2788};
 			class Attributes
 			{
-				text="Assign Task 9";
-				condition="call{task_7_done}";
+				text="Assign Task 8";
+				condition="call{task_7_done;}";
 				sizeA=0;
 				sizeB=0;
 			};
@@ -24845,11 +24861,12 @@ class Mission
 			dataType="Logic";
 			class PositionInfo
 			{
-				position[]={4566.8481,17.994169,4125.7837};
-				angles[]={0.019999012,0,0.017500184};
+				position[]={4566.8481,17.994158,4125.7842};
+				angles[]={0.020001473,0,0.017505653};
 			};
 			id=2453;
 			type="ModuleTaskSetDestination_F";
+			atlOffset=-1.9073486e-006;
 			class CustomAttributes
 			{
 				class Attribute0
