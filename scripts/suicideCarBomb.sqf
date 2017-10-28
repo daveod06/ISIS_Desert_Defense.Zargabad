@@ -8,7 +8,7 @@ _size = _this select 4;
 _wait = _this select 5;
 _distance = _this select 6;
 _enemyside = _this select 7;
-_deadManSwitch = this select 8;
+_deadManSwitch = _this select 8;
 _driver_is_alive_lp = true;
 
 

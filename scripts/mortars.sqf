@@ -11,7 +11,7 @@ aliveCheckFnc = {
 	private _mortarOk = false;
 	if !(isNull _mortarName) then
 	{
-    		if (alive _mortarName) then
+    	if (alive _mortarName) then
 		{
 			if !(isNull (gunner _mortarName)) then
 			{

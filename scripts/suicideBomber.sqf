@@ -1,10 +1,10 @@
-//[bomber,[CIVILIAN,WEST,EAST,RESISTANCE],"grenadeHand",radius] execVM "scripts\suicideBomber.sqf"; //The unit you want to be the bomber, the sides you want the bomber to attack, classname of explosive you want to use
+//[bomber,[CIVILIAN,WEST,EAST,RESISTANCE],"grenadeHand",radius,_deadManSwtich] execVM "scripts\suicideBomber.sqf"; //The unit you want to be the bomber, the sides you want the bomber to attack, classname of explosive you want to use
 
 _bomber = _this select 0;
 _targetSide = _this select 1;
 _explosiveClass = _this select 2;
 _radius = _this select 3;
-_deadManSwtich = this select 4;
+_deadManSwtich = _this select 4;
 _runCode = 1;
 
 //while {alive _bomber && _runCode == 1} do
@@ -23,36 +23,39 @@ while {_runCode == 1} do
 		};
 		_runCode = 0;
 	}
-	elseif (alive _bomber)
+	else
 	{
-		_nearUnits = nearestObjects [_bomber,["CAManBase"],70];
-		_nearUnits = _nearUnits - [_bomber];
+		if (alive _bomber) then
 		{
-			if(!(side _x in _targetSide)) then {_nearUnits = _nearUnits - [_x];};
-		} forEach _nearUnits;
-		if(count _nearUnits != 0) then
-		{
-			_pos = position (_nearUnits select 0);
-			_bomber doMove _pos;
-			waitUntil {(_bomber distance _pos < _radius) or (!alive _bomber) or (!alive(_nearUnits select 0))};
-			if(_bomber distance (_nearUnits select 0) < _radius)
-			exitWith
+			_nearUnits = nearestObjects [_bomber,["CAManBase"],70];
+			_nearUnits = _nearUnits - [_bomber];
 			{
-			_runCode = 0;
-			_explosive = _explosiveClass createVehicle (position _bomber);
-			[_bomber,_explosive] spawn {
-				_bomber = _this select 0; 
-				_explosive = _this select 1; 
-				_bomber say3D "shout";
-				sleep 0.25; 
-				_explosive setDamage 1; 
-				_bomber addRating -10000000;
-				};
-			[_explosive,_bomber] spawn {
-				_explosive = _this select 0; 
-				_bomber = _this select 1; 
-				waitUntil {!alive _bomber};
-				deleteVehicle _explosive; 
+				if(!(side _x in _targetSide)) then {_nearUnits = _nearUnits - [_x];};
+			} forEach _nearUnits;
+			if(count _nearUnits != 0) then
+			{
+				_pos = position (_nearUnits select 0);
+				_bomber doMove _pos;
+				waitUntil {(_bomber distance _pos < _radius) or (!alive _bomber) or (!alive(_nearUnits select 0))};
+				if(_bomber distance (_nearUnits select 0) < _radius)
+				exitWith
+				{
+				_runCode = 0;
+				_explosive = _explosiveClass createVehicle (position _bomber);
+				[_bomber,_explosive] spawn {
+					_bomber = _this select 0; 
+					_explosive = _this select 1; 
+					_bomber say3D "shout";
+					sleep 1.5; 
+					_explosive setDamage 1; 
+					_bomber addRating -10000000;
+					};
+				[_explosive,_bomber] spawn {
+					_explosive = _this select 0; 
+					_bomber = _this select 1; 
+					waitUntil {!alive _bomber};
+					deleteVehicle _explosive; 
+					};
 				};
 			};
 		};
