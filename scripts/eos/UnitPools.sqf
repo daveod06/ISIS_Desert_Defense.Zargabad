@@ -75,32 +75,32 @@ _tempArray=[];
 };
 // TAKISTAN MILITIA FACTION
 	if (_faction==5) then {
-	_InfPool=	["CUP_O_TK_INS_Soldier_TL","CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_MG","CUP_O_TK_INS_Soldier_GL","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_Soldier_FNFAL","CUP_O_TK_INS_Soldier_AR","CUP_O_TK_INS_Sniper","CUP_O_TK_INS_Guerilla_Medic",""];	
-	_ArmPool=	["CUP_O_T55_TK"];
-	_MotPool=	["CUP_O_LR_SPG9_TKM","CUP_O_LR_MG_TKM","CUP_O_UAZ_Open_TKA","CUP_O_UAZ_MG_TKA"];
+	_InfPool=	["CUP_O_TK_INS_Soldier_TL","CUP_O_TK_INS_Soldier","CUP_O_TK_INS_Soldier_MG","CUP_O_TK_INS_Soldier_GL","CUP_O_TK_INS_Soldier_AT","CUP_O_TK_INS_Soldier_FNFAL","CUP_O_TK_INS_Soldier_AR","CUP_O_TK_INS_Sniper","CUP_O_TK_INS_Guerilla_Medic","CUP_O_TK_INS_Bomber","CUP_O_TK_INS_Commander","CUP_O_TK_INS_Soldier_Enfield"];	
+	_ArmPool=	["CUP_O_T55_TK","CUP_O_BTR40_MG_TKM"];
+	_MotPool=	["CUP_O_LR_SPG9_TKM","CUP_O_LR_MG_TKM","CUP_O_LR_Transport_TKM","CUP_O_UAZ_Open_TKA","CUP_O_UAZ_MG_TKA","CUP_O_Ural_ZU23_TKM","CUP_O_V3S_Open_TKM"];
 	_ACHPool=	[];
 	_CHPool=	[];
 	_uavPool=	[];
-	_stPool=	["CUP_O_DSHKM_TK_INS"];
+	_stPool=	["CUP_O_DSHKM_TK_INS","CUP_O_SPG9_TK_INS"];
 	_shipPool=	[];
 	_diverPool=	["CUP_O_TK_INS_Mechanic"];
 	_crewPool=	["CUP_O_TK_INS_Mechanic"];
 	_heliCrew=	["CUP_O_TK_INS_Mechanic"];
 	};
 	
-// ADD CLASSNAMES 	
+// TAKISTAN ARMY FACTION 	
 	if (_faction==6) then {
-	_InfPool=	[];	
-	_ArmPool=	[];
-	_MotPool=	[];
-	_ACHPool=	[];
-	_CHPool=	[];
+	_InfPool=	["CUP_O_TK_Spotter","CUP_O_TK_Engineer","CUP_O_TK_Commander","CUP_O_TK_Officer","CUP_O_TK_Soldier_SL","CUP_O_TK_Medic","CUP_O_TK_Soldier_AR","CUP_O_TK_Soldier_MG","CUP_O_TK_Soldier_LAT","CUP_O_TK_Soldier_AT","CUP_O_TK_Soldier_AMG","CUP_O_TK_Soldier_Backpack","CUP_O_TK_Soldier_GL","CUP_O_TK_Soldier"];	
+	_ArmPool=	["CUP_O_T55_TK","CUP_O_T34_TKA","CUP_O_T72_TKA","CUP_O_BRDM2_ATGM_TKA","CUP_O_BRDM2_TKA","CUP_O_BMP2_ZU_TKA","CUP_O_BMP2_TKA","CUP_O_BMP1P_TKA","CUP_O_BMP1_TKA"];
+	_MotPool=	["CUP_O_BTR40_TKA","CUP_O_BTR40_MG_TKA","CUP_O_Ural_ZU23_TKA","CUP_O_Ural_Empty_TKA","CUP_O_Ural_Open_TKA","CUP_O_Ural_TKA","CUP_O_UAZ_METIS_TKA","CUP_O_UAZ_SPG9_TKA","CUP_O_UAZ_MG_TKA","CUP_O_UAZ_Unarmed_TKA","CUP_O_LR_SPG9_TKA","CUP_O_LR_Ambulance_TKA","CUP_O_LR_MG_TKA","CUP_O_LR_Transport_TKA"];
+	_ACHPool=	["CUP_O_Mi24_D_TK","CUP_O_Mi17_TK"];
+	_CHPool=	["CUP_O_MI6T_TKA","CUP_O_Mi17_VIV_TK"];
 	_uavPool=	[];
-	_stPool=	[];
+	_stPool=	["CUP_O_2b14_82mm_TK","CUP_O_Metis_TK","CUP_O_AGS_TK","CUP_O_KORD_high_TK","CUP_O_ZU23_TK"];
 	_shipPool=	[];
 	_diverPool=	[];
-	_crewPool=	[];
-	_heliCrew=	[];};
+	_crewPool=	["CUP_O_TK_Crew"];
+	_heliCrew=	["CUP_O_TK_Crew","CUP_O_TK_Pilot"];};
 	
 // ADD CLASSNAMES 	
 	if (_faction==7) then {
