@@ -1,5 +1,6 @@
 // ##POTS## 
 // _nil = null [CAR, CHANCE, SUICIDE_YELL, DELAY, SIZE, ATTACH_TO_VEHICLE, DISTANCE_FROM_TARGET, ENEMY_SIDE, DEAD_MAN_SWITCH] execVM "suicidebomber.sqf";
+if(!isServer)exitWith{};
 _car = _this select 0;
 _possibility = _this select 1;
 _shoutout = _this select 2;
