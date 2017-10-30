@@ -1,5 +1,5 @@
 //[bomber,[CIVILIAN,WEST,EAST,RESISTANCE],"grenadeHand",radius,_deadManSwtich] execVM "scripts\suicideBomber.sqf"; //The unit you want to be the bomber, the sides you want the bomber to attack, classname of explosive you want to use
-
+if(!isServer)exitWith{};
 _bomber = _this select 0;
 _targetSide = _this select 1;
 _explosiveClass = _this select 2;
