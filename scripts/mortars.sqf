@@ -1,4 +1,5 @@
 // _script = [_numRounds, _mortarName, _targetUnit, _radius, _delay] execVM "scripts\mortars.sqf";
+if(!isServer)exitWith{};
 _numRounds = _this select 0;
 _mortarName = _this select 1;
 _targetUnit = _this select 2; // array of possible target units
