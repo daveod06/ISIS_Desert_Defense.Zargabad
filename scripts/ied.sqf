@@ -1,4 +1,7 @@
-iedMkr=["iedMkr0","iedMkr1","iedMkr2"];	//List of markers to spawn IEDs in
+
+if(!isServer)exitWith{};
+//iedMkr=["iedMkr0","iedMkr1","iedMkr2"];	//List of markers to spawn IEDs in
+iedMkr=this select 1;
 iedNum=5;								//Number of IEDs per marker, defined in iedMkr	[Default: 5]
 iedDmg=false;							//Can the IED be killed with weapons?			[Default: false] TRUE = Yes | FALSE = Can only be disarmed
 Dbug=true;								//Show IED markers on map?						[Default: false]
@@ -12,7 +15,6 @@ iedAmmo=["IEDUrbanSmall_Remote_Ammo","IEDLandSmall_Remote_Ammo","IEDUrbanBig_Rem
 iedJunk=["Land_Garbage_square3_F","Land_Garbage_square5_F","Land_Garbage_line_F"];
 if(!Dbug)then{{_x setMarkerAlpha 0;}forEach iedMkr;};
 
-if(!isServer)exitWith{};
 iedAct={_iedObj=_this select 0;
 if(mineActive _iedObj)then{
 _iedBlast=selectRandom iedBlast;
