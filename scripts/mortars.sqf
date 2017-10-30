@@ -58,7 +58,7 @@ for [{_i=0}, {_i<_numRounds}, {_i=_i+1}] do
 {  
 	
 	_mortarOk = [_mortarName] call aliveCheckFnc;
-	if (_mortarOk) then
+	if ((_mortarOk) && !(isNil _targetUnit) && (count _targetUnit != 0) then
 	{
 		_uni = _targetUnit call BIS_fnc_selectRandom;
 		_mortar = _mortarName; 

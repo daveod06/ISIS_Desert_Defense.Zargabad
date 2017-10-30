@@ -2,6 +2,8 @@
 //respawnOnStart = 0;
 //respawnDelay = 2;
 setViewDistance = 6000;
+respawnOnStart = -1;
+
 
 class CfgMusic
 {

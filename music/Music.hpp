@@ -25,12 +25,6 @@ class CfgMusic
 		sound[] = {"music\007_Cradle.ogg", db+10, 1.0};
 		titles[] = {0,""};
 	};
-	class 05
-	{
-		name = "Lawrence_of_Arabia_Music";
-		sound[] = {"music\Lawrence_of_Arabia.ogg", db+10, 1.0};
-		titles[] = {0,""};
-	};
 	class 06
 	{
 		name = "007_Bunker_2_Music";
