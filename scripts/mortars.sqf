@@ -6,13 +6,12 @@ _targetUnit = _this select 2; // array of possible target units
 _radius = _this select 3;
 _delay = _this select 4;
 
-
 aliveCheckFnc = {
 	private _mortarName = _this select 0;
 	private _mortarOk = false;
 	if !(isNull _mortarName) then
 	{
-    	if (alive _mortarName) then
+    		if (alive _mortarName) then
 		{
 			if !(isNull (gunner _mortarName)) then
 			{
