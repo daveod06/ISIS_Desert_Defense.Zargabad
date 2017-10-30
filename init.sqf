@@ -6,5 +6,6 @@ call compile preprocessFileLineNumbers "scripts\Engima\Traffic\Init.sqf";
 []execVM "scripts\eos\OpenMe.sqf";
 
 // IED script
+detonateBombs = false;
 iedMkr=["iedMkr0","iedMkr1","iedMkr2"];
-[iedMkr] execVM "scripts\ied.sqf";
+[iedMkr,detonateBombs] execVM "scripts\ied.sqf";
