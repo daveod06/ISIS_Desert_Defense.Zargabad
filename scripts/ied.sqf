@@ -1,5 +1,6 @@
 
 if(!isServer)exitWith{};
+//3a. Make sure the A and B values of that marker is the same! Example: 500x500 In the "ied.sqf", add the names of your IED area markers to the array in line 1.  For example:
 //iedMkr=["iedMkr0","iedMkr1","iedMkr2"];	//List of markers to spawn IEDs in
 iedMkr=this select 1;
 iedNum=5;								//Number of IEDs per marker, defined in iedMkr	[Default: 5]
