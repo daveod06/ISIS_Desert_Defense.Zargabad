@@ -26,8 +26,8 @@ if (_fileExists) then
     _initString = preprocessFileLineNumbers _fileName; 
     if (_useFlashLights) then
     {  
-        _addFlashlightString = "removeAllPrimaryWeaponItems this;this addPrimaryWeaponItem ""acc_flashlight"";this addPrimaryWeaponItem ""rhs_acc_2dpZenit""; this addPrimaryWeaponItem ""rhsusf_acc_anpeq15_light"";"
-        _useFlashLightString = "this enablegunlights ""forceOn"";this unassignItem ""NVGoggles"";this removeItem ""NVGoggles"";this unassignItem ""NVGoggles_OPFOR"";this removeItem ""NVGoggles_OPFOR"";"
+        _addFlashlightString = "removeAllPrimaryWeaponItems this;this addPrimaryWeaponItem ""acc_flashlight"";this addPrimaryWeaponItem ""rhs_acc_2dpZenit""; this addPrimaryWeaponItem ""rhsusf_acc_anpeq15_light"";";
+        _useFlashLightString = "this enablegunlights ""forceOn"";this unassignItem ""NVGoggles"";this removeItem ""NVGoggles"";this unassignItem ""NVGoggles_OPFOR"";this removeItem ""NVGoggles_OPFOR"";";
         _flashLightArray = [_initString,_addFlashlightString,_useFlashLightString];
         _initString = _flashLightArray joinString "";
     };
