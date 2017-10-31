@@ -12,7 +12,7 @@ _enemyside = _this select 7;
 _deadManSwitch = _this select 8;
 _detonateTrigger = _this select 9;
 _driver_is_alive_lp = true;
-
+_detonateTrigger = false;
 
 if(_enemyside == "WEST") then
 {
@@ -36,7 +36,7 @@ if(_enemyside == "WEST") then
 			{
 				_possibility = 10;
 				_wait = 0;
-			}
+			};
 			_driver_is_alive_lp = _driver_is_alive;
 		}
 		else

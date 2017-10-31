@@ -8,7 +8,7 @@ class EditorData
 	toggles=1;
 	class ItemIDProvider
 	{
-		nextID=2634;
+		nextID=2637;
 	};
 	class MarkerIDProvider
 	{
@@ -16,14 +16,14 @@ class EditorData
 	};
 	class LayerIndexProvider
 	{
-		nextID=1312;
+		nextID=1360;
 	};
 	class Camera
 	{
-		pos[]={4942.043,171.10493,4830.7305};
-		dir[]={-0.79060555,-0.61251217,-0.0038199297};
-		up[]={-0.61258191,0.79031658,-0.0029602728};
-		aside[]={-0.004827816,-1.3664572e-006,1.00008};
+		pos[]={4856.4668,49.01564,2445.7388};
+		dir[]={0,-0.70710677,0.70710683};
+		up[]={0,0.70710677,0.70710671};
+		aside[]={0.99999994,0,-0};
 	};
 };
 binarizationWanted=0;
@@ -445,7 +445,7 @@ class Mission
 	};
 	class Entities
 	{
-		items=170;
+		items=172;
 		class Item0
 		{
 			dataType="Layer";
@@ -1376,7 +1376,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -1388,7 +1388,7 @@ class Mission
 					};
 					id=2462;
 					type="rhsusf_army_ocp_autorifleman";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1437,7 +1437,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -1449,7 +1449,7 @@ class Mission
 					};
 					id=2463;
 					type="rhsusf_army_ocp_marksman";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1498,7 +1498,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -1510,7 +1510,7 @@ class Mission
 					};
 					id=2464;
 					type="rhsusf_army_ocp_rifleman";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1559,7 +1559,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -1574,7 +1574,7 @@ class Mission
 					};
 					id=2466;
 					type="rhsusf_army_ocp_squadleader";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1642,7 +1642,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -1654,7 +1654,7 @@ class Mission
 					};
 					id=2470;
 					type="rhsusf_army_ocp_riflemanl";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1703,7 +1703,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -1715,7 +1715,7 @@ class Mission
 					};
 					id=2471;
 					type="rhsusf_army_ocp_grenadier";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1764,7 +1764,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -1776,7 +1776,7 @@ class Mission
 					};
 					id=2473;
 					type="rhsusf_army_ocp_rifleman";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1825,7 +1825,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -1837,7 +1837,7 @@ class Mission
 					};
 					id=2482;
 					type="rhsusf_army_ocp_rifleman";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 					class CustomAttributes
 					{
 						class Attribute0
@@ -1986,7 +1986,7 @@ class Mission
 				};
 			};
 			id=1366;
-			atlOffset=24.017145;
+			atlOffset=35.339195;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -6236,7 +6236,7 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
-				init="call{null = [this, 10, """", 0.2, ""MEDIUM"", 1, 50, ""WEST"",TRUE] execVM ""scripts\suicideCarBomb.sqf"";}";
+				init="call{null = [this, 10, """", 0.2, ""MEDIUM"", 1, 50, ""WEST"",TRUE,detonateBombs] execVM ""scripts\suicideCarBomb.sqf"";}";
 				presence=0.54235882;
 			};
 			id=1787;
@@ -6255,7 +6255,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
-				init="call{null = [this, 10, """", 0.2, ""LARGE"", 1, 25, ""WEST"",TRUE] execVM ""scripts\suicideCarBomb.sqf"";}";
+				init="call{null = [this, 10, """", 0.2, ""LARGE"", 1, 25, ""WEST"",TRUE,detonateBombs] execVM ""scripts\suicideCarBomb.sqf"";}";
 				name="suicide_truck_1";
 			};
 			id=1798;
@@ -6343,14 +6343,13 @@ class Mission
 				class Item2
 				{
 					dataType="Waypoint";
-					position[]={4781.252,28.768024,4521.0127};
+					position[]={4765.2373,27.900984,4514.2656};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=2236;
 					type="Move";
-					atlOffset=-5.7220459e-006;
 				};
 			};
 			class Attributes
@@ -6494,14 +6493,13 @@ class Mission
 				class Item2
 				{
 					dataType="Waypoint";
-					position[]={4799.4644,29.45056,4528.9658};
+					position[]={4776.9204,28.496761,4513.75};
 					class Effects
 					{
 					};
 					showWP="NEVER";
 					id=2235;
 					type="Move";
-					atlOffset=1.9073486e-005;
 				};
 			};
 			class Attributes
@@ -6573,7 +6571,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
-				init="call{null = [this, 10, """", 0.2, ""LARGE"", 1, 25, ""WEST"",TRUE] execVM ""scripts\suicideCarBomb.sqf"";}";
+				init="call{null = [this, 10, """", 0.2, ""LARGE"", 1, 25, ""WEST"",TRUE,detonateBombs] execVM ""scripts\suicideCarBomb.sqf"";}";
 				name="suicide_truck_2";
 			};
 			id=1813;
@@ -6738,7 +6736,7 @@ class Mission
 			class Attributes
 			{
 				lock="UNLOCKED";
-				init="call{null = [this, 10, """", 0.2, ""MEDIUM"", 1, 100, ""WEST"",TRUE] execVM ""scripts\suicideCarBomb.sqf"";}";
+				init="call{null = [this, 10, """", 0.2, ""MEDIUM"", 1, 100, ""WEST"",TRUE,detonateBombs] execVM ""scripts\suicideCarBomb.sqf"";}";
 				presence=0.31785819;
 			};
 			id=1840;
@@ -6779,7 +6777,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n " }";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n " }";
 						name="suicide_bomber_1";
 						presence=0.31785819;
 					};
@@ -6922,7 +6920,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
 						name="suicide_bomber_2";
 						presence=0.3856321;
 					};
@@ -7040,7 +7038,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
 						name="suicide_bomber_3";
 						presence=0.7329722;
 					};
@@ -7157,7 +7155,7 @@ class Mission
 					flags=6;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n " }";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n " }";
 						name="suicide_bomber_4";
 						presence=0.5;
 					};
@@ -8077,7 +8075,7 @@ class Mission
 		class Item81
 		{
 			dataType="Trigger";
-			position[]={4843.0674,37.794041,4577.7183};
+			position[]={4843.0669,37.794014,4577.7178};
 			angle=1.1076554;
 			class Attributes
 			{
@@ -8274,7 +8272,7 @@ class Mission
 			class Attributes
 			{
 				text="Send Suicide Trucks";
-				condition="call{this && task_6_done;}";
+				condition="call{this;}";
 				onActivation="call{trigger_bomb_trucks = true;}";
 				sizeA=100;
 				sizeB=200;
@@ -8298,7 +8296,7 @@ class Mission
 			flags=6;
 			class Attributes
 			{
-				init="call{null = [this, 10, """", 0.2, ""LARGE"", 1, 25, ""WEST"",TRUE] execVM ""scripts\suicideCarBomb.sqf"";}";
+				init="call{null = [this, 10, """", 0.2, ""LARGE"", 1, 25, ""WEST"",TRUE,detonateBombs] execVM ""scripts\suicideCarBomb.sqf"";}";
 				name="suicide_truck_7";
 				presence=0.5042358;
 			};
@@ -10308,7 +10306,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
 						name="suicide_bomber_5";
 						presence=0.79227352;
 					};
@@ -10401,7 +10399,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
 						name="suicide_bomber_6";
 						presence=0.33056593;
 					};
@@ -10494,7 +10492,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
 						name="suicide_bomber_7";
 					};
 					id=2492;
@@ -10584,7 +10582,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
 						name="suicide_bomber_8";
 						presence=0.30938664;
 					};
@@ -10677,7 +10675,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
 						name="suicide_bomber_9";
 						presence=0.56353772;
 					};
@@ -10768,7 +10766,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
 						name="suicide_bomber_10";
 						presence=0.4745847;
 					};
@@ -10860,7 +10858,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
 						name="suicide_bomber_11";
 						presence=0.42375472;
 					};
@@ -10953,7 +10951,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
 						name="suicide_bomber_12";
 						presence=0.063707292;
 					};
@@ -11043,7 +11041,7 @@ class Mission
 					flags=7;
 					class Attributes
 					{
-						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
+						init="call{[this,[WEST],""R_60mm_HE"",10,TRUE,detonateBombs] execVM ""scripts\suicideBomber.sqf"";" \n "comment ""Exported from Arsenal by SaberSnack""; " \n " " \n "comment ""Remove existing items""; " \n "removeAllWeapons this; " \n "removeAllItems this; " \n "removeAllAssignedItems this; " \n "removeUniform this; " \n "removeVest this; " \n "removeBackpack this; " \n "removeHeadgear this; " \n "removeGoggles this; " \n " " \n "comment ""Add containers""; " \n "this forceAddUniform ""CUP_O_TKI_Khet_Partug_04""; " \n "this addVest ""CUP_V_I_RACS_Carrier_Vest_2""; " \n "for ""_i"" from 1 to 4 do {this addItemToVest ""DemoCharge_Remote_Mag"";}; " \n "this addHeadgear ""CUP_H_TKI_Lungee_Open_01""; " \n " " \n "comment ""Add weapons""; " \n " " \n "comment ""Add items""; " \n "this linkItem ""ItemMap""; " \n "this linkItem ""ItemCompass""; " \n "this linkItem ""ItemWatch""; " \n "this linkItem ""ItemRadio""; " \n "}";
 						name="suicide_bomber_13";
 					};
 					id=2510;
@@ -11343,18 +11341,6 @@ class Mission
 		};
 		class Item151
 		{
-			dataType="Marker";
-			position[]={5445.6377,27.762251,2004.7412};
-			name="BAS_zone_1";
-			markerType="ELLIPSE";
-			type="Empty";
-			a=100;
-			b=100;
-			angle=0.64133602;
-			id=2573;
-		};
-		class Item152
-		{
 			dataType="Trigger";
 			position[]={4711.2593,16.736023,4844.8218};
 			class Attributes
@@ -11370,7 +11356,7 @@ class Mission
 			id=2579;
 			type="EmptyDetector";
 		};
-		class Item153
+		class Item152
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11382,7 +11368,7 @@ class Mission
 			id=2581;
 			type="Logic";
 		};
-		class Item154
+		class Item153
 		{
 			dataType="Marker";
 			position[]={4171.3687,-101.60156,4137.0244};
@@ -11395,7 +11381,7 @@ class Mission
 			id=2584;
 			atlOffset=-118.62418;
 		};
-		class Item155
+		class Item154
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11409,7 +11395,7 @@ class Mission
 			type="HeadlessClient_F";
 			atlOffset=0.011249542;
 		};
-		class Item156
+		class Item155
 		{
 			dataType="Group";
 			side="East";
@@ -11484,7 +11470,7 @@ class Mission
 			id=2588;
 			atlOffset=4.9950027;
 		};
-		class Item157
+		class Item156
 		{
 			dataType="Group";
 			side="East";
@@ -11560,7 +11546,7 @@ class Mission
 			id=2590;
 			atlOffset=4.7149963;
 		};
-		class Item158
+		class Item157
 		{
 			dataType="Group";
 			side="East";
@@ -11635,7 +11621,7 @@ class Mission
 			id=2592;
 			atlOffset=4.894001;
 		};
-		class Item159
+		class Item158
 		{
 			dataType="Group";
 			side="East";
@@ -11710,7 +11696,7 @@ class Mission
 			id=2594;
 			atlOffset=0.2675209;
 		};
-		class Item160
+		class Item159
 		{
 			dataType="Group";
 			side="East";
@@ -11785,7 +11771,7 @@ class Mission
 			id=2604;
 			atlOffset=0.36605072;
 		};
-		class Item161
+		class Item160
 		{
 			dataType="Group";
 			side="East";
@@ -11861,7 +11847,7 @@ class Mission
 			id=2606;
 			atlOffset=0.00025558472;
 		};
-		class Item162
+		class Item161
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11952,7 +11938,7 @@ class Mission
 				nAttributes=4;
 			};
 		};
-		class Item163
+		class Item162
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -11964,7 +11950,7 @@ class Mission
 			type="ModuleSlingload_F";
 			atlOffset=3.8146973e-006;
 		};
-		class Item164
+		class Item163
 		{
 			dataType="Object";
 			class PositionInfo
@@ -11979,7 +11965,7 @@ class Mission
 			type="HeliHEmpty";
 			atlOffset=0.092542648;
 		};
-		class Item165
+		class Item164
 		{
 			dataType="Trigger";
 			position[]={6245.0029,14.812609,7962.6724};
@@ -11996,7 +11982,7 @@ class Mission
 			id=2629;
 			type="EmptyDetectorAreaR250";
 		};
-		class Item166
+		class Item165
 		{
 			dataType="Group";
 			side="West";
@@ -12008,7 +11994,7 @@ class Mission
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -12019,14 +12005,14 @@ class Mission
 					};
 					id=2618;
 					type="rhsusf_army_ocp_helipilot";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 				};
 				class Item1
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -12036,14 +12022,14 @@ class Mission
 					};
 					id=2619;
 					type="rhsusf_army_ocp_helipilot";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 				};
 				class Item2
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -12052,14 +12038,14 @@ class Mission
 					};
 					id=2620;
 					type="rhsusf_army_ocp_helipilot";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 				};
 				class Item3
 				{
 					dataType="Object";
 					class PositionInfo
 					{
-						position[]={5501.5601,46.473019,5980.7944};
+						position[]={5370.48,64.497192,5851.7627};
 						angles[]={0,3.520807,0};
 					};
 					side="West";
@@ -12068,13 +12054,15 @@ class Mission
 					};
 					id=2621;
 					type="rhsusf_army_ocp_helipilot";
-					atlOffset=24.029015;
+					atlOffset=35.340675;
 				};
 				class Item4
 				{
 					dataType="Waypoint";
-					position[]={5345.0806,26.731701,5793.8198};
+					position[]={5345.0811,26.73171,5793.8198};
 					type="Unhook";
+					expCond="call{true}";
+					expActiv="call{helo animate [""Ramp"", 1];}";
 					class Effects
 					{
 					};
@@ -12169,14 +12157,14 @@ class Mission
 				};
 			};
 			id=2617;
-			atlOffset=24.017145;
+			atlOffset=35.339195;
 		};
-		class Item167
+		class Item166
 		{
 			dataType="Object";
 			class PositionInfo
 			{
-				position[]={5501.6309,50.020576,5980.6328};
+				position[]={5370.5332,68.046814,5851.7075};
 				angles[]={0,3.520807,0};
 			};
 			side="West";
@@ -12188,7 +12176,7 @@ class Mission
 			};
 			id=2625;
 			type="RHS_CH_47F_light";
-			atlOffset=24.017145;
+			atlOffset=35.339195;
 			class CustomAttributes
 			{
 				class Attribute0
@@ -12213,14 +12201,14 @@ class Mission
 				nAttributes=1;
 			};
 		};
-		class Item168
+		class Item167
 		{
 			dataType="Trigger";
-			position[]={5323.0615,26.790733,5793.1602};
+			position[]={5323.062,26.79073,5793.1602};
 			angle=1.1076554;
 			class Attributes
 			{
-				text="Play Egyptian Music";
+				text="Play Facility Music";
 				sizeA=200;
 				sizeB=200;
 				activationBy="WEST";
@@ -12228,8 +12216,9 @@ class Mission
 			};
 			id=2630;
 			type="EmptyDetectorAreaR50";
+			atlOffset=1.9073486e-006;
 		};
-		class Item169
+		class Item168
 		{
 			dataType="Logic";
 			class PositionInfo
@@ -12338,6 +12327,45 @@ class Mission
 				};
 				nAttributes=5;
 			};
+		};
+		class Item169
+		{
+			dataType="Marker";
+			position[]={4611.772,4.5400391,4231.7529};
+			name="iedMkr0";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=300;
+			b=200;
+			angle=89.998962;
+			id=2634;
+			atlOffset=-13.630627;
+		};
+		class Item170
+		{
+			dataType="Marker";
+			position[]={4922.3135,7.0585938,2695.7695};
+			name="iedMkr1";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=1200;
+			b=300;
+			angle=89.998962;
+			id=2635;
+			atlOffset=-14.848804;
+		};
+		class Item171
+		{
+			dataType="Marker";
+			position[]={4239.9351,0,4047.405};
+			name="iedMkr2";
+			markerType="RECTANGLE";
+			type="Empty";
+			a=300;
+			b=200;
+			angle=89.998962;
+			id=2636;
+			atlOffset=-17.546049;
 		};
 	};
 	class Connections

@@ -7,11 +7,12 @@ _radius = _this select 3;
 _deadManSwtich = _this select 4;
 _detonateTrigger = _this select 5;
 _runCode = 1;
+_detonateTrigger = false;
 
 //while {alive _bomber && _runCode == 1} do
 while {_runCode == 1} do
 {
-	if ((!(isNull _bomber) && !(alive _bomber) && _deadManSwtich) || (!(isNull _bomber) && _detonateTrigger) ) then
+	if ((!(isNull _bomber) && !(alive _bomber) && _deadManSwtich) || (!(isNull _bomber) && _detonateTrigger)) then
 	{
 		_explosive = _explosiveClass createVehicle (position _bomber);
 		[_explosive] spawn {
