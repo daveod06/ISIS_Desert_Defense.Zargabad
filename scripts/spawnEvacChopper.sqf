@@ -1,6 +1,6 @@
-// _script = [_pos,_type,_rot,_side,_landingPosArray,_exitPos,_evacGroup] execVM "scripts\spawnEvacChopper.sqf";
+// _script = [_spawnPos,_type,_rot,_side,_landingPosArray,_exitPos,_evacGroup] execVM "scripts\spawnEvacChopper.sqf";
 if(!isServer)exitWith{};
-_pos = _this select 0;
+_spawnPos = _this select 0;
 _type = _this select 1;
 _rot = _this select 2;
 _side = _this select 3;
@@ -9,7 +9,7 @@ _exitPos = _this select 5;
 _evacGroup = _this select 6;
 
 _landingPos = _landingPosArray call BIS_fnc_selectRandom;
-_spawnedVehicle = [_pos, _rot, _type, _side] call BIS_fnc_spawnVehicle;
+_spawnedVehicle = [_spawnPos, _rot, _type, _side] call BIS_fnc_spawnVehicle;
 _heli = _spawnedVehicle select 0;
 _heliCrew = _spawnedVehicle select 1;
 _heliGroup = _spawnedVehicle select 2;
