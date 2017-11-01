@@ -1,4 +1,7 @@
-EOS_Spawn = compile preprocessfilelinenumbers "scripts\eos\core\eos_launch.sqf";Bastion_Spawn=compile preprocessfilelinenumbers "scripts\eos\core\b_launch.sqf";null=[] execVM "scripts\eos\core\spawn_fnc.sqf";onplayerConnected {[] execVM "scripts\eos\Functions\EOS_Markers.sqf";};
+EOS_Spawn = compile preprocessfilelinenumbers "scripts\eos\core\eos_launch.sqf";
+Bastion_Spawn=compile preprocessfilelinenumbers "scripts\eos\core\b_launch.sqf";
+null=[] execVM "scripts\eos\core\spawn_fnc.sqf";
+onplayerConnected {[] execVM "scripts\eos\Functions\EOS_Markers.sqf";};
 /* EOS 1.98 by BangaBob 
 GROUP SIZES
  0 = 1
@@ -22,6 +25,6 @@ bastionColor="colorOrange";	// Colour for bastion marker
 EOS_DAMAGE_MULTIPLIER=1;	// 1 is default
 EOS_KILLCOUNTER=false;		// Counts killed units
 
-null = [["EOSzone_1"],[5,3,80],[4,2,75],[2,5,50],[0],[0],[0,0],[5,1,350,EAST,TRUE]] call EOS_Spawn;
+null = [["EOSzone_1"],[3,5,80],[5,4,75],[2,5,60],[0],[0],[0,0],[5,1,350,EAST,TRUE]] call EOS_Spawn;
 //null = [["EOSmot_1","EOSmot_2"],[0,0],[0,0],[3,1,90],[2,60],[0],[1,0,90],[0,0,350,EAST,FALSE]] call EOS_Spawn;
 //null = [["BAS_zone_1"],[0,1],[0,2],[0],[1,2],[0,0,EAST,TRUE],[0,2,120,TRUE,FALSE]] call Bastion_Spawn;
