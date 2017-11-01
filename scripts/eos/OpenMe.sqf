@@ -20,7 +20,7 @@ VictoryColor="colorGreen";	// Colour of marker after completion
 hostileColor="colorRed";	// Default colour when enemies active
 bastionColor="colorOrange";	// Colour for bastion marker
 EOS_DAMAGE_MULTIPLIER=1;	// 1 is default
-EOS_KILLCOUNTER=true;		// Counts killed units
+EOS_KILLCOUNTER=false;		// Counts killed units
 
 null = [["EOSzone_1"],[5,3,80],[4,2,75],[2,5,50],[0],[0],[0,0],[5,1,350,EAST,TRUE]] call EOS_Spawn;
 //null = [["EOSmot_1","EOSmot_2"],[0,0],[0,0],[3,1,90],[2,60],[0],[1,0,90],[0,0,350,EAST,FALSE]] call EOS_Spawn;

@@ -10,7 +10,7 @@ eos_fnc_taskpatrol= compile preprocessfile "scripts\eos\functions\shk_patrol.sqf
 SHK_pos= compile preprocessfile "scripts\eos\functions\shk_pos.sqf";
 shk_fnc_fillhouse = compile preprocessFileLineNumbers "scripts\eos\Functions\SHK_buildingpos.sqf";
 eos_fnc_getunitpool= compile preprocessfilelinenumbers "scripts\eos\UnitPools.sqf";
-eos_fnc_getunitloadout= compile preprocessfilelinenumbers "scripts\eos\UnitLoadouds.sqf";
+eos_fnc_getunitloadout= compile preprocessfilelinenumbers "scripts\eos\UnitLoadouts.sqf";
 call compile preprocessfilelinenumbers "scripts\eos\AI_Skill.sqf";
 
 EOS_Deactivate = {

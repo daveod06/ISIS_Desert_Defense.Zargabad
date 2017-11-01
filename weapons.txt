@@ -360,3 +360,6 @@ this enablegunlights "forceOn"
 
 
 
+
+this addItemToBackpack "ToolKit";
+this addItemToBackpack "MineDetector";
