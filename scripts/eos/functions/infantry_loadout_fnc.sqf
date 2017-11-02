@@ -6,8 +6,8 @@ _pos=(_this select 0);
 _grpSize=(_this select 1);
 _faction=(_this select 2);
 _side=(_this select 3);
-_sidesArray = ["WEST","EAST","Resistance","Civilian"];
- _enemyFactionsArray = [];
+_sidesArray = [WEST,EAST,Resistance,Civilian];
+_enemyFactionsArray = [];
 
 _grpMin=_grpSize select 0;
 _grpMax=_grpSize select 1;
@@ -20,7 +20,7 @@ _grpSize=_r+_grpMin;
 	_grp=createGroup _side;
     
     {
-        if !([_side, _x] call BIS_fnc_sideIsFriendly) then
+        if !([_side, _x] call BIS_fnc_sideIsFriendly) then // says syntax error here missing (
         {
             _enemyFactionsArray append [_x];
         };

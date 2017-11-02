@@ -9,11 +9,11 @@ _delay = _this select 4;
 aliveCheckFnc = {
 	private _mortarName = _this select 0;
 	private _mortarOk = false;
-	if !(isNull _mortarName) then
+	if (!(isNull _mortarName)) then
 	{
     		if (alive _mortarName) then
 		{
-			if !(isNull (gunner _mortarName)) then
+			if (!(isNull (gunner _mortarName))) then
 			{
 				if (alive (gunner _mortarName)) then
 				{

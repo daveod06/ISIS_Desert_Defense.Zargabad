@@ -34,7 +34,7 @@ if (_fileExists) then
         _flashLightArray = [_initString,_addFlashlightString,_useFlashLightString];
         _initString = _flashLightArray joinString "";
     };
-    if ((random 1.0 <= EOS_SUICIDE_CHANCE) then
+    if (random 1.0 <= EOS_SUICIDE_CHANCE) then
     {  
         _suicideBomberArray = [_initString,_suicideBomberString];
         _initString = _suicideBomberArray joinString "";
@@ -47,12 +47,12 @@ else
         _flashLightArray = [_initString,_addFlashlightString,_useFlashLightString];
         _initString = _flashLightArray joinString "";
     };
-    if ((random 1.0 <= EOS_SUICIDE_CHANCE) then
+    if (random 1.0 <= EOS_SUICIDE_CHANCE) then
     {  
         _suicideBomberArray = [_initString,_suicideBomberString];
         _initString = _suicideBomberArray joinString "";
     };
 };
 
-hint _initString;
+//hint _initString;
 _initString
