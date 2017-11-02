@@ -12643,7 +12643,7 @@ class Mission
 				name="spawn_evac_chopper";
 				text="Spawn Evac Chopper";
 				condition="call{blufor_ready_for_evac;}";
-				onActivation="call{_chopper = [getPos spawn_evac_chopper, ""RHS_UH60M_d"", random 360, WEST, [getPosATL evac1],  getPos spawn_evac_chopper, us_group, false] execVM ""scripts\spawnEvacChopper.sqf"";}";
+				onActivation="call{_chopper = [getPos spawn_evac_chopper, ""RHS_UH60M_d"", random 360, WEST, [getPosATL evac1,getPosATL evac2,getPosATL evac3],  getPos spawn_evac_chopper, us_group, false] execVM ""scripts\spawnEvacChopper.sqf"";}";
 				sizeA=0;
 				sizeB=0;
 				isServerOnly=1;
