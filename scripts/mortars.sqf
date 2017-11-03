@@ -1,7 +1,8 @@
-// _script = [_numRounds, _mortarName, _targetUnit, _radius, _delay] execVM "scripts\mortars.sqf";
+// _script = [_numRounds, _mortar, _targetUnit, _radius, _delay] execVM "scripts\mortars.sqf";
 if(!isServer)exitWith{};
+private = ["_numRounds","_mortar","_targetUnit","_radius","_delay","_unit","_pos","_center","_ammo"];
 _numRounds = _this select 0;
-_mortarName = _this select 1;
+_mortar = _this select 1;
 _targetUnit = _this select 2; // array of possible target units
 _radius = _this select 3;
 _delay = _this select 4;
@@ -56,13 +57,11 @@ setAiFireFnc = {
 
 for [{_i=0}, {_i<_numRounds}, {_i=_i+1}] do 
 {  
-	
-	_mortarOk = [_mortarName] call aliveCheckFnc;
+	_mortarOk = [_mortar] call aliveCheckFnc;
 	if ((_mortarOk) && (count _targetUnit != 0)) then
 	{
-		_uni = _targetUnit call BIS_fnc_selectRandom;
-		_mortar = _mortarName; 
-		_center = getPosAtl _uni;
+		_unit = _targetUnit call BIS_fnc_selectRandom;
+		_center = getPosAtl _unit;
 		_ammo = getArtilleryAmmo [_mortar] select 0;
 		_pos = [(_center select 0) - _radius + (2 * random _radius), (_center select 1) - _radius + (2 * random _radius), 0];
 		_mortar doArtilleryFire [_pos, _ammo, 1];

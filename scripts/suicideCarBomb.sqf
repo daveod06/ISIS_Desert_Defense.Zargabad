@@ -1,5 +1,5 @@
 // ##POTS## 
-// _nil = null [CAR, CHANCE, SUICIDE_YELL, DELAY, SIZE, ATTACH_TO_VEHICLE, DISTANCE_FROM_TARGET, ENEMY_SIDE, DEAD_MAN_SWITCH] execVM "suicidebomber.sqf";
+// _nil = null [CAR, CHANCE, SUICIDE_YELL, DELAY, SIZE, ATTACH_TO_VEHICLE, DISTANCE_FROM_TARGET, [_targetSide], DEAD_MAN_SWITCH] execVM "suicidebomber.sqf";
 if(!isServer)exitWith{};
 _car = _this select 0;
 _possibility = _this select 1;
@@ -8,100 +8,50 @@ _delay = _this select 3;
 _size = _this select 4;
 _wait = _this select 5;
 _distance = _this select 6;
-_enemyside = _this select 7;
+_targetSide = _this select 7;
 _deadManSwitch = _this select 8;
 _detonateTrigger = _this select 9;
 _driver_is_alive_lp = true;
 _detonateTrigger = false;
 
-if(_enemyside == "WEST") then
-{
-	while {_wait == 1} do
-	{
-		if(alive _car) then
-		{
-			_driver_is_alive = alive (driver _car);
-			sleep 0.75;
-			if((driver _car isKindOf "Man") && (side driver _car != west) && (_driver_is_alive)) then
-			{
-				_types = _car nearObjects ["All", _distance];
-				{if(side _x == west) then {_wait = 0}} foreach _types;
-			};
-			if ((!_driver_is_alive) && (_driver_is_alive_lp) && _deadManSwitch) then
-			{
-				_possibility = 10;
-				_wait = 0;
-			};
-			if (_detonateTrigger) then
-			{
-				_possibility = 10;
-				_wait = 0;
-			};
-			_driver_is_alive_lp = _driver_is_alive;
-		}
-		else
-		{
-			_wait = 0;
-			_possibility = 0;
-		};
-	};
-};
 
-if(_enemyside == "EAST") then
 {
-	while {_wait == 1} do
-	{
-		if(alive _car) then
-		{
-			_driver_is_alive = alive (driver _car);
-			sleep 0.75;
-			if((driver _car isKindOf "Man") && (side driver _car != east) && (_driver_is_alive)) then
-			{
-				_types = _car nearObjects ["All", _distance];
-				{if(side _x == east) then {_wait = 0}} foreach _types;
-			};
-			if ((!_driver_is_alive) && (_driver_is_alive_lp) && _deadManSwitch) then
-			{
-				_possibility = 10;
-				_wait = 0;
-			};
-			_driver_is_alive_lp = _driver_is_alive;
-		}
-		else 
-		{
-			_wait = 0;
-			_possibility = 0;
-		};
-	};
-};
+    if(_enemyside == _x) then
+    {
+    	while {_wait == 1} do
+    	{
+    		if(alive _car) then
+    		{
+    			_driver_is_alive = alive (driver _car);
+    			sleep 0.75;
+    			if((driver _car isKindOf "Man") && (side driver _car != _x) && (_driver_is_alive)) then
+    			{
+    				_types = _car nearObjects ["All", _distance];
+    				{if(side _x == west) then {_wait = 0}} foreach _types;
+    			};
+    			if ((!_driver_is_alive) && (_driver_is_alive_lp) && _deadManSwitch) then
+    			{
+    				_possibility = 10;
+    				_wait = 0;
+    			};
+    			if (_detonateTrigger) then
+    			{
+    				_possibility = 10;
+    				_wait = 0;
+    			};
+    			_driver_is_alive_lp = _driver_is_alive;
+    		}
+    		else
+    		{
+    			_wait = 0;
+    			_possibility = 0;
+    		};
+    	};
+    };
 
-if(_enemyside == "RESISTANCE") then
-{
-	while {_wait == 1} do
-	{
-		if(alive _car) then
-		{
-			_driver_is_alive = alive (driver _car);
-			sleep 0.75;
-			if((driver _car isKindOf "Man") && (side driver _car != resistance) && (_driver_is_alive)) then
-			{
-				_types = _car nearObjects ["All", _distance];
-				{if(side _x == east) then {_wait = 0}} foreach _types;
-			};
-			if ((!_driver_is_alive) && (_driver_is_alive_lp) && _deadManSwitch) then
-			{
-				_possibility = 10;
-				_wait = 0;
-			};
-			_driver_is_alive_lp = _driver_is_alive;
-		}
-		else 
-		{
-			_wait = 0;
-			_possibility = 0;
-		};
-	};
-};
+} forEach _targetSide;
+
+
 
 if (_possibility > 0) then
 {
@@ -116,17 +66,20 @@ if (_possibility > 0) then
 			_men = crew _car;	
 			{deleteVehicle _x} foreach _men;
 			_null = "R_80mm_HE" createVehicle getPos _car;
-			_updatepos = [(getPos _car) select 0, ((getPos _car) select 1) + 1];
-			sleep 0.25;
-			_null = "R_80mm_HE" createVehicle _updatepos;		
-			_car setDammage 1; 
+			//_updatepos = [(getPos _car) select 0, ((getPos _car) select 1) + 1];
+			//sleep 0.25;
+			//_null = "R_80mm_HE" createVehicle _updatepos;	
+            _null setDammage 1;
+			//_car setDammage 1; 
 		};
 		if (_size == "MEDIUM") then 
 		{
 			_men = crew _car;	
 			{deleteVehicle _x} foreach _men;
-			_null = "Sh_122_HE" createVehicle getPos _car;
-			_car setDammage 1; 
+			//_null = "Sh_122_HE" createVehicle getPos _car;
+			_null = "SatchelCharge_Remote_Ammo" createVehicle getPos _car;
+            _null setDammage 1;
+			//_car setDammage 1; 
 		};
 		if (_size == "LARGE") then 
 		{
