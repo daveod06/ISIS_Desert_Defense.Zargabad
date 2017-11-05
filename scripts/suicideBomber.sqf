@@ -1,6 +1,6 @@
 //[_bomber,[CIVILIAN,WEST,EAST,RESISTANCE],_explosiveSize,_radius,_deadManSwtich,_detonateTrigger] execVM "scripts\suicideBomber.sqf"; //The unit you want to be the bomber, the sides you want the bomber to attack, classname of explosive you want to use
 if(!isServer)exitWith{};
-private [];
+private ["_pos","_nearUnits","_explosive","_explosiveClass","_explosivesOptions","_runCode","_detonateTrigger","_deadManSwtich","_radius","_explosiveSize","_targetSide","_bomber",];
 COMMON_fnc_unitOk = compile preprocessfile "scripts\common\unitOk.sqf";
 _bomber = _this select 0;
 _targetSide = _this select 1;

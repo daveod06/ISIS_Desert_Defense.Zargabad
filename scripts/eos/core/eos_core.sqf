@@ -28,7 +28,7 @@ _cache= if (count _this > 6) then {_this select 6} else {false};
 _trig=format ["EOSTrigger%1",_mkr];
 
 if (!_cache) then {
-	if ismultiplayer then {
+	if (ismultiplayer) then {
 			if (_heightLimit) then 
 			{_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 5} count playableunits > 0";
 							}else 
@@ -168,7 +168,7 @@ if ((_fSize select 0) > 0) then {
 		0=[(_fGroup select 0),_fSize,_cargoGrp,_faction,9] call eos_fnc_setcargo;
 			0=[_cargoGrp,"INFskill"] call eos_fnc_grouphandlers;
 		_fGroup set [count _fGroup,_cargoGrp];
-			null = [_mkr,_fGroup,_counter] execvm "eos\functions\TransportUnload_fnc.sqf";
+			null = [_mkr,_fGroup,_counter] execvm "scripts\eos\functions\TransportUnload_fnc.sqf";
 				}else{
 					_wp1 = (_fGroup select 2) addWaypoint [(markerpos _mkr), 0];  
 					_wp1 setWaypointSpeed "FULL";  
@@ -201,7 +201,19 @@ while {_eosAct} do
 	if (!isnil "_cGrp") then 
 				{				
 						{	_vehicle = _x select 0;_crew = _x select 1;_grp = _x select 2;
-									if (!alive _vehicle || {!alive _x} foreach _crew) then { _cGrps= _cGrps - 1;};	
+									//if (!alive _vehicle || {!alive _x} foreach _crew) then {_cGrps= _cGrps - 1;};
+									_crewVehicleDead = 0;
+									{
+										if (!alive _x) then
+										{
+											_crewVehicleDead = _crewVehicleDead + 1;
+										};
+									} forEach _crew;
+						
+									if (_crewVehicleDead >= 1 || !alive _vehicle) then 
+									{ 
+										_cGrps= _cGrps - 1;
+									};	
 												{deleteVehicle _x} forEach (_crew);		
 														if (!(vehicle player == _vehicle)) then {{deleteVehicle _x} forEach[_vehicle];};												
 																			{deleteVehicle _x} foreach units _grp;deleteGroup _grp;
@@ -212,7 +224,19 @@ if (_debug) then {player sidechat format ["ID:c%1",_cGrps];};};
 		if (!isnil "_dGrp") then 
 				{				
 						{	_vehicle = _x select 0;_crew = _x select 1;_grp = _x select 2;
-									if (!alive _vehicle || {!alive _x} foreach _crew) then {_dGrps= _dGrps - 1;};	
+									//if (!alive _vehicle || {!alive _x} foreach _crew) then {_dGrps= _dGrps - 1;};
+									_crewVehicleDead = 0;
+									{
+										if (!alive _x) then
+										{
+											_crewVehicleDead = _crewVehicleDead + 1;
+										};
+									} forEach _crew;
+						
+									if (_crewVehicleDead >= 1 || !alive _vehicle) then 
+									{ 
+										_dGrps= _dGrps - 1;
+									};
 												{deleteVehicle _x} forEach (_crew);		
 														if (!(vehicle player == _vehicle)) then {{deleteVehicle _x} forEach[_vehicle];};												
 																			{deleteVehicle _x} foreach units _grp;deleteGroup _grp;
@@ -243,7 +267,19 @@ if (_debug) then {player sidechat format ["ID:c%1",_dGrps];};};
 	if (!isnil "_eGrp") then 
 				{			
 						{	_vehicle = _x select 0;_crew = _x select 1;_grp = _x select 2;
-									if (!alive _vehicle || {!alive _x} foreach _crew) then {_eGrps= _eGrps - 1;};			
+									//if (!alive _vehicle || {!alive _x} foreach _crew) then {_eGrps= _eGrps - 1;};
+									_crewVehicleDead = 0;
+									{
+										if (!alive _x) then
+										{
+											_crewVehicleDead = _crewVehicleDead + 1;
+										};
+									} forEach _crew;
+						
+									if (_crewVehicleDead >= 1 || !alive _vehicle) then 
+									{ 
+										_eGrps= _eGrps - 1;
+									};									
 														{deleteVehicle _x} forEach (_crew);
 															if (!(vehicle player == _vehicle)) then {{deleteVehicle _x} forEach[_vehicle];};													
 																	{deleteVehicle _x} foreach units _grp;deleteGroup _grp;
@@ -253,7 +289,19 @@ if (_debug) then {player sidechat format ["ID:c%1",_dGrps];};};
 	if (!isnil "_fGrp") then 
 				{			
 						{	_vehicle = _x select 0;_crew = _x select 1;_grp = _x select 2; _cargoGrp = _x select 3;
-									if (!alive _vehicle || {!alive _x} foreach _crew) then {_fGrps= _fGrps - 1;};			
+									//if (!alive _vehicle || {!alive _x} foreach _crew) then {_fGrps= _fGrps - 1;};
+									_crewVehicleDead = 0;
+									{
+										if (!alive _x) then
+										{
+											_crewVehicleDead = _crewVehicleDead + 1;
+										};
+									} forEach _crew;
+						
+									if (_crewVehicleDead >= 1 || !alive _vehicle) then 
+									{ 
+										_fGrps= _fGrps - 1;
+									};									
 														{deleteVehicle _x} forEach (_crew);
 															if (!(vehicle player == _vehicle)) then {{deleteVehicle _x} forEach[_vehicle];};													
 																	{deleteVehicle _x} foreach units _grp;deleteGroup _grp;

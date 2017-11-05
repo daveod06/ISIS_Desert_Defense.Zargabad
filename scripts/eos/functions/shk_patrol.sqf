@@ -16,7 +16,7 @@ Requires SHK_POS.sqf
 */
 DEBUG = false;
 
-if !isserver exitwith {};
+if (!isserver) exitwith {};
 
 // Handle parameters
 private ["_grp","_dst","_marker"];
@@ -80,7 +80,7 @@ _wp1 setWaypointType "CYCLE";
 _wp1 setWaypointCompletionRadius 50;
 
 if (DEBUG) then {
-    while {sleep 5; {alive _x} count (units _grp) > 0} do {
+    while {sleep 5.0; {alive _x} count (units _grp) > 0;} do {
       private ["_m","_p"];
       _p = getpos leader _grp;
       _m = createMarker [format["SHK_patrol_%1%2%3",(floor(_p select 0)),(floor(_p select 1)),floor time],_p];

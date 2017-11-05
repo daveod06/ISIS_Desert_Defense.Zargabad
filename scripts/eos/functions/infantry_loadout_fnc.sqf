@@ -20,7 +20,7 @@ _grpSize=_r+_grpMin;
 	_grp=createGroup _side;
     
     {
-        if !([_side, _x] call BIS_fnc_sideIsFriendly) then // says syntax error here missing (
+        if ([_side, _x] call BIS_fnc_sideIsEnemy) then
         {
             _enemyFactionsArray append [_x];
         };

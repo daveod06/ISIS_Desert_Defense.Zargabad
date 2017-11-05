@@ -103,7 +103,7 @@ if (typename (_this select 0) == typename "") then {
   if (!_water) then {
     private ["_d","_l","_p"];
     _l = true;
-    switch _watersolution do {
+    switch (_watersolution) do {
       case 0: {
         if (surfaceIsWater [_pos select 0,_pos select 1]) then {
           _pos = +[];

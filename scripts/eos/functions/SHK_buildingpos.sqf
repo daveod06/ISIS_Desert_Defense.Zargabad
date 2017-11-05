@@ -43,7 +43,7 @@
 */
 
 private "_men";
-if isserver then {
+if (isserver) then {
 
   private "_sortArray";
   _sortArray = {
@@ -134,20 +134,20 @@ if isserver then {
   _taken = [];
   {
     while {count _taken < count _bpos} do {
-      switch _prio do {
+      switch (_prio) do {
         case 0: { _ind = floor(random count _bpos) }; // random
         case 1: { _ind = count _taken }; // ground floor first
         case 2: { _ind = count _bpos - count _taken - 1 }; // roof first
       };
-      if !(_ind in _taken) exitwith {
+      if (!(_ind in _taken)) exitwith {
         _taken set [count _taken,_ind];
         _pos = _bpos select _ind;
         _dir = ((_pos select 0) - (_opos select 0)) atan2 ((_pos select 1) - (_opos select 1));
         if (_dir < 0) then {_dir = _dir + 360};
         _x setpos _pos;
         _x setformdir _dir;
-        if _disableMove then { doStop _x; };
-        if _stance then { _x setunitpos "UP" };
+        if (_disableMove) then { doStop _x; };
+        if (_stance) then { _x setunitpos "UP" };
       };
     };
   } foreach _men;
@@ -172,7 +172,7 @@ if (count _this > 7) then {
     };
     SHK_BuildingPos_init = true;
   };
-  if isserver then {
+  if (isserver) then {
     private ["_hide","_portition","_condition","_hidden","_u","_i"];
     _hide = _this select 7;
     _portition = _hide select 0;
@@ -187,11 +187,11 @@ if (count _this > 7) then {
 
     SHK_BuildingPos_EH = [true,_hidden];
     publicvariable "SHK_BuildingPos_EH";
-    if !isdedicated then { [true,_hidden] call SHK_BuildingPos_fnc };
+    if (!isdedicated) then { [true,_hidden] call SHK_BuildingPos_fnc };
     
     waituntil {(call compile _condition)};
     SHK_BuildingPos_EH = [false,_hidden];
     publicvariable "SHK_BuildingPos_EH";
-    if !isdedicated then { [false,_hidden] call SHK_BuildingPos_fnc };
+    if (!isdedicated) then { [false,_hidden] call SHK_BuildingPos_fnc };
   };
 };

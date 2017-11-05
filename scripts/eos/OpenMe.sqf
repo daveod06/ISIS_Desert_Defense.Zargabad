@@ -1,7 +1,8 @@
 EOS_Spawn = compile preprocessfilelinenumbers "scripts\eos\core\eos_launch.sqf";
 Bastion_Spawn=compile preprocessfilelinenumbers "scripts\eos\core\b_launch.sqf";
 null=[] execVM "scripts\eos\core\spawn_fnc.sqf";
-onplayerConnected {[] execVM "scripts\eos\Functions\EOS_Markers.sqf";};
+//onplayerConnected {[] execVM "scripts\eos\Functions\EOS_Markers.sqf";};
+["JIP_id", "onplayerConnected", {[] execVM "scripts\eos\Functions\EOS_Markers.sqf";}] call BIS_fnc_addStackedEventHandler;
 /* EOS 1.98 by BangaBob 
 GROUP SIZES
  0 = 1

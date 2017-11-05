@@ -28,7 +28,7 @@ _Placement=(_mkrX + 500);
 	if (_side==INDEPENDENT) then {_enemyFaction="GUER";};
 	if (_side==CIVILIAN) then {_enemyFaction="civ";};
 
-	if ismultiplayer then {
+	if (ismultiplayer) then {
 			if (_heightLimit) then 
 			{_actCond="{vehicle _x in thisList && isplayer _x && ((getPosATL _x) select 2) < 5} count playableunits > 0";
 							}else 
@@ -125,7 +125,7 @@ if (_debug) then {player sidechat format ["Armoured:%1 - r%2",_counter,_AVehGrou
 			0=[_cargoGrp,"INFskill"] call eos_fnc_grouphandlers;
 			
 				_fGroup set [count _fGroup,_cargoGrp];
-				null = [_mkr,_fGroup,_counter] execvm "eos\functions\TransportUnload_fnc.sqf";
+				null = [_mkr,_fGroup,_counter] execvm "scripts\eos\functions\TransportUnload_fnc.sqf";
 												
 												}else{
 						_wp1 = (_fGroup select 2) addWaypoint [(markerpos _mkr), 0];  

@@ -11,7 +11,7 @@ while {_loop == 1} do
 {
     if ([_groupName] call COMMON_fnc_groupOk) then
     {
-        _groupInTrigger = (({_x in list _triggerName} count (units _groupName)) >= 1 ));
+        _groupInTrigger = (({_x in list _triggerName} count (units _groupName)) >= 1 );
     }
     else
     {

@@ -1,6 +1,7 @@
 // ##POTS## 
 // _nil = null [CAR, CHANCE, SUICIDE_YELL, DELAY, SIZE, ATTACH_TO_VEHICLE, DISTANCE_FROM_TARGET, [_targetSide], DEAD_MAN_SWITCH] execVM "suicidebomber.sqf";
 if(!isServer)exitWith{};
+private ["_types","_null3","_null2","_null1","_men","_null","_achance","_rchance","_driver_is_alive","_enemyside","_driver_is_alive_lp","_detonateTrigger","_deadManSwitch","_targetSide","_distance","_wait","_size","_delay","_shoutout","_possibility","_car",];
 _car = _this select 0;
 _possibility = _this select 1;
 _shoutout = _this select 2;
@@ -13,7 +14,7 @@ _deadManSwitch = _this select 8;
 _detonateTrigger = _this select 9;
 _driver_is_alive_lp = true;
 _detonateTrigger = false;
-
+_enemyside = west;
 
 {
     if(_enemyside == _x) then

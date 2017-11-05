@@ -1,6 +1,6 @@
 // _script = [_spawnPos,_type,_rot,_side,_landingPosArray,_exitPos,_evacGroup,_landInHotLZ] execVM "scripts\spawnEvacChopper.sqf";
 if(!isServer)exitWith{};
- private ["_spawnPos","_type","_rot","_chopperSide","_landingPosArray","_exitPos","_evacGroup","_landInHotLZ","_landingPos",
+ private ["_evacTask","_spawnPos","_type","_rot","_chopperSide","_landingPosArray","_exitPos","_evacGroup","_landInHotLZ","_landingPos",
  "_spawnedVehicle","_heli","_heliGroup","_evacGroupLeader","_sideStr","_LZhot","_landLoop","_LZTrigger","_successLoop","_inChopper"];
 _spawnPos = _this select 0;
 _type = _this select 1;

@@ -7,7 +7,7 @@ _skillArray=(_this select 1);
 				{
 			_skillvalue = (_skillset select _forEachIndex) + (random 0.2) - (random 0.2);
 			_unit setSkill [_x,_skillvalue];
-				} forEach ['aimingAccuracy','aimingShake','aimingSpeed','spotDistance','spotTime','courage','reloadSpeed','commanding','general'];
+				} forEach ["aimingAccuracy","aimingShake","aimingSpeed","spotDistance","spotTime","courage","reloadSpeed","commanding","general"];
 				
 					if (EOS_DAMAGE_MULTIPLIER != 1) then {_unit removeAllEventHandlers "HandleDamage";_unit addEventHandler ["HandleDamage",{_damage = (_this select 2)*EOS_DAMAGE_MULTIPLIER;_damage}];};
 					if (EOS_KILLCOUNTER) then {_unit addEventHandler ["killed", "null=[] execVM ""scripts\eos\functions\EOS_KillCounter.sqf"""]};

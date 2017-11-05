@@ -2,7 +2,7 @@
 if(!isServer)exitWith{};
 private ["_staticName","_loop","_string","_triggers","_enemyFactions","_staticTrigger","_numTriggersActive"];
 COMMON_fnc_staticOk = compile preprocessfile "scripts\common\staticOk.sqf";
-COMMON_fnc_getEnemyFactions = compile preprocessfile "scripts\common\getEnemyFactions.sqf"
+COMMON_fnc_getEnemyFactions = compile preprocessfile "scripts\common\getEnemyFactions.sqf";
 _staticName = _this select 0;
 _loop = 1;
 _numTriggersActive = 0;
@@ -32,8 +32,8 @@ while {_loop == 1} do
         if (_numTriggersActive > 0) then
         {
             _loop = 0;
-            (gunner _staticName) doGetOut;
-            (gunner _staticName) moveOut;
+            doGetOut (gunner _staticName);
+            moveOut (gunner _staticName);
             wp0 = (group (gunner _staticName)) addwaypoint [(getPos _staticName), 500];
             wp0 setwaypointtype "MOVE";
         };

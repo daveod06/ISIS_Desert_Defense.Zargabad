@@ -6,6 +6,47 @@
       <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="scripts" IsExpanded="true" FileName="scripts">
         <IsSelected>false</IsSelected>
         <SubNodes>
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="common" IsExpanded="true" FileName="scripts\common">
+            <IsSelected>false</IsSelected>
+            <SubNodes>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="getEnemyFactions.sqf" IsExpanded="false" FileName="scripts\common\getEnemyFactions.sqf">
+                <IsSelected>false</IsSelected>
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="getFriendlyFactions.sqf" IsExpanded="false" FileName="scripts\common\getFriendlyFactions.sqf">
+                <IsSelected>false</IsSelected>
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="groupAnyInTrigger.sqf" IsExpanded="false" FileName="scripts\common\groupAnyInTrigger.sqf">
+                <IsSelected>false</IsSelected>
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="groupEntireInTrigger.sqf" IsExpanded="false" FileName="scripts\common\groupEntireInTrigger.sqf">
+                <IsSelected>false</IsSelected>
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="groupInVehicle.sqf" IsExpanded="false" FileName="scripts\common\groupInVehicle.sqf">
+                <IsSelected>false</IsSelected>
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="groupOk.sqf" IsExpanded="false" FileName="scripts\common\groupOk.sqf">
+                <IsSelected>false</IsSelected>
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="staticFleeWeapon.sqf" IsExpanded="false" FileName="scripts\common\staticFleeWeapon.sqf">
+                <IsSelected>false</IsSelected>
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="staticOk.sqf" IsExpanded="false" FileName="scripts\common\staticOk.sqf">
+                <IsSelected>false</IsSelected>
+                <SubNodes />
+              </ProjectNodeViewModel>
+              <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="unitOk.sqf" IsExpanded="false" FileName="scripts\common\unitOk.sqf">
+                <IsSelected>false</IsSelected>
+                <SubNodes />
+              </ProjectNodeViewModel>
+            </SubNodes>
+          </ProjectNodeViewModel>
           <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Engima" IsExpanded="true" FileName="scripts\Engima">
             <IsSelected>false</IsSelected>
             <SubNodes>
@@ -191,10 +232,6 @@
                 <SubNodes />
               </ProjectNodeViewModel>
             </SubNodes>
-          </ProjectNodeViewModel>
-          <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="checkIfInVehicle.sqf" IsExpanded="false" FileName="scripts\checkIfInVehicle.sqf">
-            <IsSelected>false</IsSelected>
-            <SubNodes />
           </ProjectNodeViewModel>
           <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="ied.sqf" IsExpanded="false" FileName="scripts\ied.sqf">
             <IsSelected>false</IsSelected>
