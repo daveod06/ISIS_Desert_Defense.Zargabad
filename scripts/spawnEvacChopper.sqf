@@ -1,7 +1,6 @@
 // _script = [_spawnPos,_type,_rot,_side,_landingPosArray,_exitPos,_evacGroup,_landInHotLZ] execVM "scripts\spawnEvacChopper.sqf";
 if(!isServer)exitWith{};
- private ["_evacTask","_spawnPos","_type","_rot","_chopperSide","_landingPosArray","_exitPos","_evacGroup","_landInHotLZ","_landingPos",
- "_spawnedVehicle","_heli","_heliGroup","_evacGroupLeader","_sideStr","_LZhot","_landLoop","_LZTrigger","_successLoop","_inChopper"];
+//private ["_evacTask","_spawnPos","_type","_rot","_chopperSide","_landingPosArray","_exitPos","_evacGroup","_landInHotLZ","_landingPos","_spawnedVehicle","_heli","_heliGroup","_evacGroupLeader","_sideStr","_LZhot","_landLoop","_LZTrigger","_successLoop","_inChopper"];
 _spawnPos = _this select 0;
 _type = _this select 1;
 _rot = _this select 2;
@@ -93,8 +92,9 @@ else
 
 while {_successLoop == 1} do
 {
-    _inChopper = (({alive _x && (vehicle _x) == _x} count allPlayers) == 0;);
-    if (({alive _x} count units _heliGroup > 0) && (alive _evacGroupLeader) && _inChopper) then
+    //_inChopper = (({alive _x && (vehicle _x) == _x} count allPlayers) == 0;);
+    _inChopper = (({!(alive _x) || _x in _heli} count (units _evacGroup)) == count (units _evacGroup));
+    if (({alive _x} count units _heliGroup > 0) && _inChopper) then
     {
         _successLoop = 0;
         _evacTask = ["evac_task_0", west, ["Wait for extraction, make sure all team members are aboard.","Wait For Evac Helicopter","evac_task_0_marker"], (_landingPos, "SUCCEEDED", 10, true, true, "takeoff", true)] call BIS_fnc_setTask;

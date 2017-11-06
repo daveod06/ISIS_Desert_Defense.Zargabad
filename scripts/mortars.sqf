@@ -1,6 +1,6 @@
 // _script = [_numRounds, _mortar, _targetUnit, _radius, _delay] execVM "scripts\mortars.sqf";
 if(!isServer)exitWith{};
-private ["_mortarOk","_i","_gunnerName","_numRounds","_mortar","_targetUnit","_radius","_delay","_unit","_pos","_center","_ammo"];
+//private ["_mortarOk","_i","_gunnerName","_numRounds","_mortar","_targetUnit","_radius","_delay","_unit","_pos","_center","_ammo"];
 _numRounds = _this select 0;
 _mortar = _this select 1;
 _targetUnit = _this select 2; // array of possible target units

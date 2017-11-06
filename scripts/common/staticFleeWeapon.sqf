@@ -1,4 +1,4 @@
-// [_staticName] execVm "scripts\common\staticOk.sqf"
+// [_staticName] execVm "scripts\common\staticFleeWeapon.sqf"
 if(!isServer)exitWith{};
 private ["_staticName","_loop","_string","_triggers","_enemyFactions","_staticTrigger","_numTriggersActive"];
 COMMON_fnc_staticOk = compile preprocessfile "scripts\common\staticOk.sqf";
