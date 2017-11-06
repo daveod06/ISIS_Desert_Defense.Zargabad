@@ -6,7 +6,7 @@
       <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="scripts" IsExpanded="true" FileName="scripts">
         <IsSelected>false</IsSelected>
         <SubNodes>
-          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="common" IsExpanded="true" FileName="scripts\common">
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="common" IsExpanded="false" FileName="scripts\common">
             <IsSelected>false</IsSelected>
             <SubNodes>
               <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="getEnemyFactions.sqf" IsExpanded="false" FileName="scripts\common\getEnemyFactions.sqf">
@@ -47,7 +47,7 @@
               </ProjectNodeViewModel>
             </SubNodes>
           </ProjectNodeViewModel>
-          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Engima" IsExpanded="true" FileName="scripts\Engima">
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Engima" IsExpanded="false" FileName="scripts\Engima">
             <IsSelected>false</IsSelected>
             <SubNodes>
               <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="Civilians" IsExpanded="true" FileName="scripts\Engima\Civilians">
@@ -134,10 +134,10 @@
               </ProjectNodeViewModel>
             </SubNodes>
           </ProjectNodeViewModel>
-          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="eos" IsExpanded="true" FileName="scripts\eos">
+          <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="eos" IsExpanded="false" FileName="scripts\eos">
             <IsSelected>false</IsSelected>
             <SubNodes>
-              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="core" IsExpanded="true" FileName="scripts\eos\core">
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="core" IsExpanded="false" FileName="scripts\eos\core">
                 <IsSelected>false</IsSelected>
                 <SubNodes>
                   <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="b_core.sqf" IsExpanded="false" FileName="scripts\eos\core\b_core.sqf">
@@ -162,7 +162,7 @@
                   </ProjectNodeViewModel>
                 </SubNodes>
               </ProjectNodeViewModel>
-              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="functions" IsExpanded="true" FileName="scripts\eos\functions">
+              <ProjectNodeViewModel xsi:type="ProjectFolderNodeViewModel" Name="functions" IsExpanded="false" FileName="scripts\eos\functions">
                 <IsSelected>false</IsSelected>
                 <SubNodes>
                   <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="cargo_fnc.sqf" IsExpanded="false" FileName="scripts\eos\functions\cargo_fnc.sqf">
@@ -264,7 +264,7 @@
         <SubNodes />
       </ProjectNodeViewModel>
       <ProjectNodeViewModel xsi:type="ProjectFileNodeViewModel" Name="init.sqf" IsExpanded="false" FileName="init.sqf">
-        <IsSelected>false</IsSelected>
+        <IsSelected>true</IsSelected>
         <SubNodes />
       </ProjectNodeViewModel>
     </SubNodes>
