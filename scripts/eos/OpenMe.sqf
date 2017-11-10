@@ -28,8 +28,8 @@ EOS_KILLCOUNTER=false;		// Counts killed units
 EOS_USE_FLASHLIGHTS=true;   // Attempts to make spawned units use flashlights
 EOS_SUICIDE_CHANCE=0.0;     // Attemps to % of units as suicide bombers 0.0 -1.0
 
-null = [["EOSzone_1"],[3,5,80],[5,4,75],[2,5,60],[0],[0],[0,0],[5,1,350,EAST,TRUE]] call EOS_Spawn;
-null = [["EOSzone_2"],[1,3,80],[1,4,75],[0,0],[0],[0],[0,0],[5,1,350,EAST,TRUE]] call EOS_Spawn;
-null = [["EOSzone_3"],[1,3,80],[1,4,75],[0,0],[0],[0],[0,0],[5,1,350,EAST,TRUE]] call EOS_Spawn;
+null = [["EOSzone_1"],[3,2,80],[5,1,50],[2,1,60],[1],[0],[0,0],[5,1,350,EAST,TRUE]] call EOS_Spawn;
+null = [["EOSzone_2"],[2,2,60],[1,1,75],[0,0],[0],[0],[0,0],[5,1,350,EAST,TRUE]] call EOS_Spawn;
+null = [["EOSzone_3"],[2,2,60],[1,1,75],[0,0],[0],[0],[0,0],[5,1,350,EAST,TRUE]] call EOS_Spawn;
 //null = [["EOSmot_1","EOSmot_2"],[0,0],[0,0],[3,1,90],[2,60],[0],[1,0,90],[0,0,350,EAST,FALSE]] call EOS_Spawn;
 //null = [["BAS_zone_1"],[0,1],[0,2],[0],[1,2],[0,0,EAST,TRUE],[0,2,120,TRUE,FALSE]] call Bastion_Spawn;
