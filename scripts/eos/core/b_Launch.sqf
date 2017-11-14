@@ -1,20 +1,22 @@
-if (isServer) then {
+if (isServer) then 
+{
 private ["_CHgroupArray","_LVgroupArray","_PAgroupArray","_CHGroups","_AVehGroups","_LVehGroups","_PApatrols"];
 
 _JIPmkr=(_this select 0);
-_infantry=(_this select 1);
+_spawn=(_this select 1);
+_infantry=(_this select 2);
 _PApatrols=_infantry select 0;
 _PAgroupSize=_infantry select 1;
-_LVeh=(_this select 2);
+_LVeh=(_this select 3);
 _LVehGroups=_LVeh select 0;
 _LVgroupSize=_LVeh select 1;
-_AVeh=(_this select 3);
+_AVeh=(_this select 4);
 _AVehGroups=_AVeh select 0;
-_SVeh=(_this select 4);
+_SVeh=(_this select 5);
 _CHGroups=_SVeh select 0;
 _CHgroupSize=_SVeh select 1;
-_settings=(_this select 5);
-_basSettings=(_this select 6);
+_settings=(_this select 6);
+_basSettings=(_this select 7);
 	if (_PAgroupSize==0) then {_PAgroupArray=[1,1]};
 	if (_PAgroupSize==1) then {_PAgroupArray=[2,4]};
 	if (_PAgroupSize==2) then {_PAgroupArray=[4,8]};
@@ -42,7 +44,7 @@ _basSettings=(_this select 6);
 	if (isnil "_eosMarkers") then {_eosMarkers=[];};
 		_eosMarkers set [count _eosMarkers,_x];
 		server setvariable ["EOSmarkers",_eosMarkers,true];
-		null = [_x,[_PApatrols,_PAgroupArray],[_LVehGroups,_LVgroupArray],[_AVehGroups],[_CHGroups,_CHgroupArray],_settings,_basSettings] execVM "scripts\eos\core\b_core.sqf";
+		null = [_x,_spawn,[_PApatrols,_PAgroupArray],[_LVehGroups,_LVgroupArray],[_AVehGroups],[_CHGroups,_CHgroupArray],_settings,_basSettings] execVM "scripts\eos\core\b_core.sqf";
 }foreach _JIPmkr;
 
 };
